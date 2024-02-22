@@ -1,0 +1,5 @@
+ls data/U2OS*|sort -R |tail -10000 |while read file; do
+    # Something involving $file, or you can leave
+    # off the while to just get the filenames
+    mv $file data2
+done

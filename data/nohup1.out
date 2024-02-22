@@ -1,0 +1,2621 @@
+/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/opt/anaconda3/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/opt/anaconda3/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/opt/anaconda3/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/opt/anaconda3/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/opt/anaconda3/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/opt/anaconda3/lib/python3.7/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+Using TensorFlow backend.
+WARNING:tensorflow:From /opt/anaconda3/lib/python3.7/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2019-11-17 00:52:50.703796: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-11-17 00:52:50.800591: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2394335000 Hz
+2019-11-17 00:52:50.813550: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x558a52fc8250 executing computations on platform Host. Devices:
+2019-11-17 00:52:50.813600: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2019-11-17 00:52:50.919742: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2019-11-17 00:52:51.103090: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: GeForce GTX TITAN X major: 5 minor: 2 memoryClockRate(GHz): 1.076
+pciBusID: 0000:03:00.0
+2019-11-17 00:52:51.153965: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2019-11-17 00:52:51.374556: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2019-11-17 00:52:51.462223: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2019-11-17 00:52:51.499489: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2019-11-17 00:52:51.695546: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2019-11-17 00:52:51.807359: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2019-11-17 00:52:52.169685: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2019-11-17 00:52:52.172743: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2019-11-17 00:52:52.186107: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2019-11-17 00:52:52.426110: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-11-17 00:52:52.426157: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2019-11-17 00:52:52.426166: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2019-11-17 00:52:52.429250: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11398 MB memory) -> physical GPU (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:03:00.0, compute capability: 5.2)
+2019-11-17 00:52:52.458374: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x558a54f548b0 executing computations on platform CUDA. Devices:
+2019-11-17 00:52:52.458397: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): GeForce GTX TITAN X, Compute Capability 5.2
+2019-11-17 00:52:58.881707: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+2019-11-17 00:53:00.700294: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2019-11-17 00:53:02.005166: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+2019-11-17 00:53:03.219813: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2019-11-17 00:56:07.984858: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Model: "model"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_1 (InputLayer)            [(None, 133, 133, 3) 0                                            
+__________________________________________________________________________________________________
+input_2 (InputLayer)            [(None, 133, 133, 3) 0                                            
+__________________________________________________________________________________________________
+batch_normalization (BatchNorma (None, 133, 133, 3)  12          input_1[0][0]                    
+                                                                 input_2[0][0]                    
+__________________________________________________________________________________________________
+conv2d (Conv2D)                 (None, 66, 66, 64)   1792        batch_normalization[0][0]        
+                                                                 batch_normalization[1][0]        
+__________________________________________________________________________________________________
+re_lu (ReLU)                    (None, 66, 66, 64)   0           conv2d[0][0]                     
+                                                                 conv2d[1][0]                     
+__________________________________________________________________________________________________
+dropout (Dropout)               (None, 66, 66, 64)   0           re_lu[0][0]                      
+                                                                 re_lu[1][0]                      
+__________________________________________________________________________________________________
+batch_normalization_1 (BatchNor (None, 66, 66, 64)   256         dropout[0][0]                    
+                                                                 dropout[1][0]                    
+__________________________________________________________________________________________________
+conv2d_1 (Conv2D)               (None, 32, 32, 16)   9232        batch_normalization_1[0][0]      
+                                                                 batch_normalization_1[1][0]      
+__________________________________________________________________________________________________
+re_lu_1 (ReLU)                  (None, 32, 32, 16)   0           conv2d_1[0][0]                   
+                                                                 conv2d_1[1][0]                   
+__________________________________________________________________________________________________
+dropout_1 (Dropout)             (None, 32, 32, 16)   0           re_lu_1[0][0]                    
+                                                                 re_lu_1[1][0]                    
+__________________________________________________________________________________________________
+batch_normalization_2 (BatchNor (None, 32, 32, 16)   64          dropout_1[0][0]                  
+                                                                 dropout_1[1][0]                  
+__________________________________________________________________________________________________
+conv2d_2 (Conv2D)               (None, 15, 15, 4)    580         batch_normalization_2[0][0]      
+                                                                 batch_normalization_2[1][0]      
+__________________________________________________________________________________________________
+re_lu_2 (ReLU)                  (None, 15, 15, 4)    0           conv2d_2[0][0]                   
+                                                                 conv2d_2[1][0]                   
+__________________________________________________________________________________________________
+batch_normalization_3 (BatchNor (None, 15, 15, 4)    16          re_lu_2[0][0]                    
+                                                                 re_lu_2[1][0]                    
+__________________________________________________________________________________________________
+add (Add)                       (None, 15, 15, 4)    0           batch_normalization_3[0][0]      
+                                                                 batch_normalization_3[1][0]      
+__________________________________________________________________________________________________
+max_pooling2d (MaxPooling2D)    (None, 5, 5, 4)      0           add[0][0]                        
+__________________________________________________________________________________________________
+flatten (Flatten)               (None, 100)          0           max_pooling2d[0][0]              
+__________________________________________________________________________________________________
+dense (Dense)                   (None, 16)           1616        flatten[0][0]                    
+__________________________________________________________________________________________________
+batch_normalization_4 (BatchNor (None, 16)           64          dense[0][0]                      
+__________________________________________________________________________________________________
+dense_1 (Dense)                 (None, 16)           272         batch_normalization_4[0][0]      
+__________________________________________________________________________________________________
+batch_normalization_5 (BatchNor (None, 16)           64          dense_1[0][0]                    
+__________________________________________________________________________________________________
+dense_2 (Dense)                 (None, 4)            68          batch_normalization_5[0][0]      
+==================================================================================================
+Total params: 14,036
+Trainable params: 13,798
+Non-trainable params: 238
+__________________________________________________________________________________________________
+Epoch 1/500
+
+Epoch 00001: val_acc improved from -inf to 0.25581, saving model to model.h5
+7187/7187 - 191s - loss: 1.4729 - acc: 0.2530 - val_loss: 1.4198 - val_acc: 0.2558
+2019-11-17 00:59:11.198908: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 2/500
+
+Epoch 00002: val_acc did not improve from 0.25581
+7187/7187 - 183s - loss: 1.3989 - acc: 0.2549 - val_loss: 1.3986 - val_acc: 0.2482
+2019-11-17 01:02:13.082412: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 3/500
+
+Epoch 00003: val_acc improved from 0.25581 to 0.25962, saving model to model.h5
+7187/7187 - 182s - loss: 1.3933 - acc: 0.2535 - val_loss: 1.3936 - val_acc: 0.2596
+2019-11-17 01:05:14.731902: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 4/500
+
+Epoch 00004: val_acc did not improve from 0.25962
+7187/7187 - 182s - loss: 1.3912 - acc: 0.2528 - val_loss: 1.3908 - val_acc: 0.2542
+2019-11-17 01:08:16.339747: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 5/500
+
+Epoch 00005: val_acc did not improve from 0.25962
+7187/7187 - 182s - loss: 1.3894 - acc: 0.2537 - val_loss: 1.3931 - val_acc: 0.2570
+2019-11-17 01:11:18.443966: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 6/500
+
+Epoch 00006: val_acc did not improve from 0.25962
+7187/7187 - 182s - loss: 1.3883 - acc: 0.2546 - val_loss: 1.3892 - val_acc: 0.2572
+2019-11-17 01:14:22.320578: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 7/500
+
+Epoch 00007: val_acc improved from 0.25962 to 0.26342, saving model to model.h5
+7187/7187 - 184s - loss: 1.3877 - acc: 0.2579 - val_loss: 1.3880 - val_acc: 0.2634
+2019-11-17 01:17:26.569411: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 8/500
+
+Epoch 00008: val_acc did not improve from 0.26342
+7187/7187 - 184s - loss: 1.3874 - acc: 0.2569 - val_loss: 1.3873 - val_acc: 0.2628
+2019-11-17 01:20:31.072194: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 9/500
+
+Epoch 00009: val_acc did not improve from 0.26342
+7187/7187 - 185s - loss: 1.3871 - acc: 0.2572 - val_loss: 1.3872 - val_acc: 0.2558
+2019-11-17 01:23:34.236401: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 10/500
+
+Epoch 00010: val_acc improved from 0.26342 to 0.26442, saving model to model.h5
+7187/7187 - 183s - loss: 1.3866 - acc: 0.2594 - val_loss: 1.3865 - val_acc: 0.2644
+2019-11-17 01:26:38.564173: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 11/500
+
+Epoch 00011: val_acc did not improve from 0.26442
+7187/7187 - 184s - loss: 1.3863 - acc: 0.2604 - val_loss: 1.3871 - val_acc: 0.2570
+2019-11-17 01:29:42.547140: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 12/500
+
+Epoch 00012: val_acc did not improve from 0.26442
+7187/7187 - 184s - loss: 1.3863 - acc: 0.2597 - val_loss: 1.3858 - val_acc: 0.2564
+2019-11-17 01:32:46.372571: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 13/500
+
+Epoch 00013: val_acc did not improve from 0.26442
+7187/7187 - 184s - loss: 1.3861 - acc: 0.2599 - val_loss: 1.3856 - val_acc: 0.2620
+2019-11-17 01:35:49.810980: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 14/500
+
+Epoch 00014: val_acc did not improve from 0.26442
+7187/7187 - 183s - loss: 1.3857 - acc: 0.2613 - val_loss: 1.3847 - val_acc: 0.2636
+2019-11-17 01:38:53.385775: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 15/500
+
+Epoch 00015: val_acc did not improve from 0.26442
+7187/7187 - 184s - loss: 1.3854 - acc: 0.2627 - val_loss: 1.3842 - val_acc: 0.2638
+2019-11-17 01:41:56.832645: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 16/500
+
+Epoch 00016: val_acc improved from 0.26442 to 0.26883, saving model to model.h5
+7187/7187 - 183s - loss: 1.3854 - acc: 0.2630 - val_loss: 1.3837 - val_acc: 0.2688
+2019-11-17 01:45:00.823581: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 17/500
+
+Epoch 00017: val_acc did not improve from 0.26883
+7187/7187 - 184s - loss: 1.3853 - acc: 0.2617 - val_loss: 1.3840 - val_acc: 0.2626
+2019-11-17 01:48:04.885530: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 18/500
+
+Epoch 00018: val_acc did not improve from 0.26883
+7187/7187 - 184s - loss: 1.3854 - acc: 0.2629 - val_loss: 1.3849 - val_acc: 0.2668
+2019-11-17 01:51:09.196693: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 19/500
+
+Epoch 00019: val_acc did not improve from 0.26883
+7187/7187 - 184s - loss: 1.3850 - acc: 0.2628 - val_loss: 1.3848 - val_acc: 0.2586
+2019-11-17 01:54:13.455003: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 20/500
+
+Epoch 00020: val_acc did not improve from 0.26883
+7187/7187 - 184s - loss: 1.3847 - acc: 0.2623 - val_loss: 1.3845 - val_acc: 0.2682
+2019-11-17 01:57:17.564334: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 21/500
+
+Epoch 00021: val_acc improved from 0.26883 to 0.27464, saving model to model.h5
+7187/7187 - 184s - loss: 1.3847 - acc: 0.2650 - val_loss: 1.3833 - val_acc: 0.2746
+2019-11-17 02:00:21.405812: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 22/500
+
+Epoch 00022: val_acc did not improve from 0.27464
+7187/7187 - 184s - loss: 1.3843 - acc: 0.2649 - val_loss: 1.3840 - val_acc: 0.2736
+2019-11-17 02:03:25.372426: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 23/500
+
+Epoch 00023: val_acc did not improve from 0.27464
+7187/7187 - 184s - loss: 1.3844 - acc: 0.2651 - val_loss: 1.3836 - val_acc: 0.2632
+2019-11-17 02:06:28.954943: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 24/500
+
+Epoch 00024: val_acc did not improve from 0.27464
+7187/7187 - 184s - loss: 1.3843 - acc: 0.2631 - val_loss: 1.3828 - val_acc: 0.2602
+2019-11-17 02:09:32.757341: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 25/500
+
+Epoch 00025: val_acc improved from 0.27464 to 0.27664, saving model to model.h5
+7187/7187 - 184s - loss: 1.3840 - acc: 0.2658 - val_loss: 1.3836 - val_acc: 0.2766
+2019-11-17 02:12:36.870106: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 26/500
+
+Epoch 00026: val_acc did not improve from 0.27664
+7187/7187 - 184s - loss: 1.3838 - acc: 0.2676 - val_loss: 1.3829 - val_acc: 0.2762
+2019-11-17 02:15:40.762352: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 27/500
+
+Epoch 00027: val_acc did not improve from 0.27664
+7187/7187 - 184s - loss: 1.3838 - acc: 0.2673 - val_loss: 1.3829 - val_acc: 0.2670
+2019-11-17 02:18:44.761881: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 28/500
+
+Epoch 00028: val_acc did not improve from 0.27664
+7187/7187 - 184s - loss: 1.3834 - acc: 0.2688 - val_loss: 1.3829 - val_acc: 0.2664
+2019-11-17 02:21:48.736377: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 29/500
+
+Epoch 00029: val_acc did not improve from 0.27664
+7187/7187 - 184s - loss: 1.3832 - acc: 0.2686 - val_loss: 1.3821 - val_acc: 0.2746
+2019-11-17 02:24:52.570576: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 30/500
+
+Epoch 00030: val_acc did not improve from 0.27664
+7187/7187 - 184s - loss: 1.3830 - acc: 0.2702 - val_loss: 1.3826 - val_acc: 0.2710
+2019-11-17 02:27:56.287823: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 31/500
+
+Epoch 00031: val_acc did not improve from 0.27664
+7187/7187 - 184s - loss: 1.3825 - acc: 0.2716 - val_loss: 1.3826 - val_acc: 0.2758
+2019-11-17 02:30:59.577534: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 32/500
+
+Epoch 00032: val_acc did not improve from 0.27664
+7187/7187 - 183s - loss: 1.3824 - acc: 0.2722 - val_loss: 1.3818 - val_acc: 0.2728
+2019-11-17 02:34:02.235198: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 33/500
+
+Epoch 00033: val_acc improved from 0.27664 to 0.27784, saving model to model.h5
+7187/7187 - 183s - loss: 1.3824 - acc: 0.2740 - val_loss: 1.3807 - val_acc: 0.2778
+2019-11-17 02:37:06.223134: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 34/500
+
+Epoch 00034: val_acc did not improve from 0.27784
+7187/7187 - 184s - loss: 1.3821 - acc: 0.2727 - val_loss: 1.3813 - val_acc: 0.2768
+2019-11-17 02:40:10.245792: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 35/500
+
+Epoch 00035: val_acc did not improve from 0.27784
+7187/7187 - 184s - loss: 1.3817 - acc: 0.2726 - val_loss: 1.3822 - val_acc: 0.2736
+2019-11-17 02:43:14.009664: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 36/500
+
+Epoch 00036: val_acc improved from 0.27784 to 0.27985, saving model to model.h5
+7187/7187 - 184s - loss: 1.3814 - acc: 0.2752 - val_loss: 1.3802 - val_acc: 0.2798
+2019-11-17 02:46:16.898430: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 37/500
+
+Epoch 00037: val_acc did not improve from 0.27985
+7187/7187 - 183s - loss: 1.3811 - acc: 0.2756 - val_loss: 1.3809 - val_acc: 0.2774
+2019-11-17 02:49:20.445706: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 38/500
+
+Epoch 00038: val_acc did not improve from 0.27985
+7187/7187 - 184s - loss: 1.3810 - acc: 0.2744 - val_loss: 1.3801 - val_acc: 0.2776
+2019-11-17 02:52:24.426002: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 39/500
+
+Epoch 00039: val_acc did not improve from 0.27985
+7187/7187 - 184s - loss: 1.3812 - acc: 0.2753 - val_loss: 1.3815 - val_acc: 0.2744
+2019-11-17 02:55:28.513704: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 40/500
+
+Epoch 00040: val_acc improved from 0.27985 to 0.28486, saving model to model.h5
+7187/7187 - 184s - loss: 1.3809 - acc: 0.2746 - val_loss: 1.3799 - val_acc: 0.2849
+2019-11-17 02:58:32.665174: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 41/500
+
+Epoch 00041: val_acc did not improve from 0.28486
+7187/7187 - 184s - loss: 1.3806 - acc: 0.2762 - val_loss: 1.3802 - val_acc: 0.2796
+2019-11-17 03:01:36.814121: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 42/500
+
+Epoch 00042: val_acc did not improve from 0.28486
+7187/7187 - 184s - loss: 1.3804 - acc: 0.2737 - val_loss: 1.3801 - val_acc: 0.2788
+2019-11-17 03:04:41.219307: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 43/500
+
+Epoch 00043: val_acc did not improve from 0.28486
+7187/7187 - 184s - loss: 1.3805 - acc: 0.2753 - val_loss: 1.3801 - val_acc: 0.2748
+2019-11-17 03:07:45.683554: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 44/500
+
+Epoch 00044: val_acc did not improve from 0.28486
+7187/7187 - 184s - loss: 1.3800 - acc: 0.2760 - val_loss: 1.3786 - val_acc: 0.2835
+2019-11-17 03:10:49.764185: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 45/500
+
+Epoch 00045: val_acc did not improve from 0.28486
+7187/7187 - 184s - loss: 1.3802 - acc: 0.2762 - val_loss: 1.3787 - val_acc: 0.2742
+2019-11-17 03:13:54.062311: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 46/500
+
+Epoch 00046: val_acc did not improve from 0.28486
+7187/7187 - 184s - loss: 1.3796 - acc: 0.2762 - val_loss: 1.3789 - val_acc: 0.2746
+2019-11-17 03:16:58.316413: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 47/500
+
+Epoch 00047: val_acc improved from 0.28486 to 0.28866, saving model to model.h5
+7187/7187 - 184s - loss: 1.3795 - acc: 0.2773 - val_loss: 1.3785 - val_acc: 0.2887
+2019-11-17 03:20:02.211292: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 48/500
+
+Epoch 00048: val_acc did not improve from 0.28866
+7187/7187 - 184s - loss: 1.3793 - acc: 0.2795 - val_loss: 1.3772 - val_acc: 0.2855
+2019-11-17 03:23:06.382227: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 49/500
+
+Epoch 00049: val_acc did not improve from 0.28866
+7187/7187 - 184s - loss: 1.3790 - acc: 0.2787 - val_loss: 1.3778 - val_acc: 0.2752
+2019-11-17 03:26:10.771883: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 50/500
+
+Epoch 00050: val_acc did not improve from 0.28866
+7187/7187 - 184s - loss: 1.3792 - acc: 0.2785 - val_loss: 1.3779 - val_acc: 0.2792
+2019-11-17 03:29:14.827873: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 51/500
+
+Epoch 00051: val_acc did not improve from 0.28866
+7187/7187 - 184s - loss: 1.3788 - acc: 0.2801 - val_loss: 1.3794 - val_acc: 0.2843
+2019-11-17 03:32:18.845542: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 52/500
+
+Epoch 00052: val_acc did not improve from 0.28866
+7187/7187 - 184s - loss: 1.3788 - acc: 0.2790 - val_loss: 1.3788 - val_acc: 0.2802
+2019-11-17 03:35:22.374480: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 53/500
+
+Epoch 00053: val_acc did not improve from 0.28866
+7187/7187 - 184s - loss: 1.3788 - acc: 0.2794 - val_loss: 1.3785 - val_acc: 0.2815
+2019-11-17 03:38:26.482571: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 54/500
+
+Epoch 00054: val_acc did not improve from 0.28866
+7187/7187 - 184s - loss: 1.3782 - acc: 0.2805 - val_loss: 1.3765 - val_acc: 0.2788
+2019-11-17 03:41:30.644796: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 55/500
+
+Epoch 00055: val_acc did not improve from 0.28866
+7187/7187 - 184s - loss: 1.3781 - acc: 0.2791 - val_loss: 1.3769 - val_acc: 0.2879
+2019-11-17 03:44:35.101815: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 56/500
+
+Epoch 00056: val_acc did not improve from 0.28866
+7187/7187 - 184s - loss: 1.3781 - acc: 0.2802 - val_loss: 1.3793 - val_acc: 0.2766
+2019-11-17 03:47:38.822564: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 57/500
+
+Epoch 00057: val_acc did not improve from 0.28866
+7187/7187 - 184s - loss: 1.3780 - acc: 0.2816 - val_loss: 1.3779 - val_acc: 0.2744
+2019-11-17 03:50:42.729272: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 58/500
+
+Epoch 00058: val_acc did not improve from 0.28866
+7187/7187 - 184s - loss: 1.3776 - acc: 0.2818 - val_loss: 1.3775 - val_acc: 0.2887
+2019-11-17 03:53:46.925367: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 59/500
+
+Epoch 00059: val_acc did not improve from 0.28866
+7187/7187 - 184s - loss: 1.3772 - acc: 0.2834 - val_loss: 1.3757 - val_acc: 0.2841
+2019-11-17 03:56:50.960279: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 60/500
+
+Epoch 00060: val_acc did not improve from 0.28866
+7187/7187 - 184s - loss: 1.3778 - acc: 0.2812 - val_loss: 1.3764 - val_acc: 0.2865
+2019-11-17 03:59:55.162038: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 61/500
+
+Epoch 00061: val_acc did not improve from 0.28866
+7187/7187 - 184s - loss: 1.3771 - acc: 0.2820 - val_loss: 1.3778 - val_acc: 0.2786
+2019-11-17 04:02:59.207577: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 62/500
+
+Epoch 00062: val_acc improved from 0.28866 to 0.29026, saving model to model.h5
+7187/7187 - 184s - loss: 1.3776 - acc: 0.2820 - val_loss: 1.3773 - val_acc: 0.2903
+2019-11-17 04:06:03.389297: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 63/500
+
+Epoch 00063: val_acc improved from 0.29026 to 0.29107, saving model to model.h5
+7187/7187 - 184s - loss: 1.3769 - acc: 0.2830 - val_loss: 1.3768 - val_acc: 0.2911
+2019-11-17 04:09:06.419238: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 64/500
+
+Epoch 00064: val_acc improved from 0.29107 to 0.29127, saving model to model.h5
+7187/7187 - 183s - loss: 1.3767 - acc: 0.2827 - val_loss: 1.3746 - val_acc: 0.2913
+2019-11-17 04:12:08.907023: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 65/500
+
+Epoch 00065: val_acc did not improve from 0.29127
+7187/7187 - 182s - loss: 1.3769 - acc: 0.2838 - val_loss: 1.3765 - val_acc: 0.2821
+2019-11-17 04:15:12.980766: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 66/500
+
+Epoch 00066: val_acc did not improve from 0.29127
+7187/7187 - 184s - loss: 1.3766 - acc: 0.2833 - val_loss: 1.3760 - val_acc: 0.2857
+2019-11-17 04:18:16.405347: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 67/500
+
+Epoch 00067: val_acc did not improve from 0.29127
+7187/7187 - 183s - loss: 1.3770 - acc: 0.2803 - val_loss: 1.3733 - val_acc: 0.2867
+2019-11-17 04:21:20.480238: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 68/500
+
+Epoch 00068: val_acc did not improve from 0.29127
+7187/7187 - 184s - loss: 1.3768 - acc: 0.2809 - val_loss: 1.3755 - val_acc: 0.2905
+2019-11-17 04:24:24.669603: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 69/500
+
+Epoch 00069: val_acc did not improve from 0.29127
+7187/7187 - 184s - loss: 1.3763 - acc: 0.2829 - val_loss: 1.3759 - val_acc: 0.2901
+2019-11-17 04:27:28.503021: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 70/500
+
+Epoch 00070: val_acc did not improve from 0.29127
+7187/7187 - 184s - loss: 1.3764 - acc: 0.2834 - val_loss: 1.3752 - val_acc: 0.2863
+2019-11-17 04:30:32.064155: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 71/500
+
+Epoch 00071: val_acc did not improve from 0.29127
+7187/7187 - 184s - loss: 1.3765 - acc: 0.2834 - val_loss: 1.3774 - val_acc: 0.2863
+2019-11-17 04:33:35.688425: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 72/500
+
+Epoch 00072: val_acc did not improve from 0.29127
+7187/7187 - 184s - loss: 1.3768 - acc: 0.2844 - val_loss: 1.3738 - val_acc: 0.2889
+2019-11-17 04:36:39.639680: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 73/500
+
+Epoch 00073: val_acc did not improve from 0.29127
+7187/7187 - 184s - loss: 1.3762 - acc: 0.2842 - val_loss: 1.3738 - val_acc: 0.2881
+2019-11-17 04:39:43.416783: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 74/500
+
+Epoch 00074: val_acc improved from 0.29127 to 0.29567, saving model to model.h5
+7187/7187 - 184s - loss: 1.3753 - acc: 0.2868 - val_loss: 1.3729 - val_acc: 0.2957
+2019-11-17 04:42:45.371396: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 75/500
+
+Epoch 00075: val_acc did not improve from 0.29567
+7187/7187 - 182s - loss: 1.3755 - acc: 0.2850 - val_loss: 1.3726 - val_acc: 0.2887
+2019-11-17 04:45:49.435584: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 76/500
+
+Epoch 00076: val_acc did not improve from 0.29567
+7187/7187 - 184s - loss: 1.3756 - acc: 0.2851 - val_loss: 1.3746 - val_acc: 0.2879
+2019-11-17 04:48:53.812628: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 77/500
+
+Epoch 00077: val_acc did not improve from 0.29567
+7187/7187 - 184s - loss: 1.3754 - acc: 0.2851 - val_loss: 1.3742 - val_acc: 0.2915
+2019-11-17 04:51:57.835428: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 78/500
+
+Epoch 00078: val_acc improved from 0.29567 to 0.29748, saving model to model.h5
+7187/7187 - 184s - loss: 1.3749 - acc: 0.2852 - val_loss: 1.3729 - val_acc: 0.2975
+2019-11-17 04:55:01.703395: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 79/500
+
+Epoch 00079: val_acc did not improve from 0.29748
+7187/7187 - 184s - loss: 1.3754 - acc: 0.2859 - val_loss: 1.3729 - val_acc: 0.2905
+2019-11-17 04:58:05.232511: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 80/500
+
+Epoch 00080: val_acc did not improve from 0.29748
+7187/7187 - 184s - loss: 1.3746 - acc: 0.2858 - val_loss: 1.3739 - val_acc: 0.2909
+2019-11-17 05:01:09.528992: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 81/500
+
+Epoch 00081: val_acc did not improve from 0.29748
+7187/7187 - 184s - loss: 1.3751 - acc: 0.2856 - val_loss: 1.3739 - val_acc: 0.2883
+2019-11-17 05:04:14.135468: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 82/500
+
+Epoch 00082: val_acc did not improve from 0.29748
+7187/7187 - 185s - loss: 1.3748 - acc: 0.2868 - val_loss: 1.3720 - val_acc: 0.2949
+2019-11-17 05:07:18.231241: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 83/500
+
+Epoch 00083: val_acc did not improve from 0.29748
+7187/7187 - 184s - loss: 1.3743 - acc: 0.2865 - val_loss: 1.3745 - val_acc: 0.2959
+2019-11-17 05:10:22.007036: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 84/500
+
+Epoch 00084: val_acc did not improve from 0.29748
+7187/7187 - 184s - loss: 1.3744 - acc: 0.2861 - val_loss: 1.3727 - val_acc: 0.2897
+2019-11-17 05:13:25.822524: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 85/500
+
+Epoch 00085: val_acc did not improve from 0.29748
+7187/7187 - 184s - loss: 1.3740 - acc: 0.2867 - val_loss: 1.3723 - val_acc: 0.2915
+2019-11-17 05:16:29.756921: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 86/500
+
+Epoch 00086: val_acc did not improve from 0.29748
+7187/7187 - 184s - loss: 1.3741 - acc: 0.2870 - val_loss: 1.3725 - val_acc: 0.2951
+2019-11-17 05:19:33.699713: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 87/500
+
+Epoch 00087: val_acc did not improve from 0.29748
+7187/7187 - 184s - loss: 1.3740 - acc: 0.2891 - val_loss: 1.3742 - val_acc: 0.2929
+2019-11-17 05:22:36.744121: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 88/500
+
+Epoch 00088: val_acc did not improve from 0.29748
+7187/7187 - 183s - loss: 1.3737 - acc: 0.2890 - val_loss: 1.3713 - val_acc: 0.2881
+2019-11-17 05:25:40.278293: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 89/500
+
+Epoch 00089: val_acc did not improve from 0.29748
+7187/7187 - 184s - loss: 1.3740 - acc: 0.2846 - val_loss: 1.3711 - val_acc: 0.2969
+2019-11-17 05:28:42.679785: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 90/500
+
+Epoch 00090: val_acc did not improve from 0.29748
+7187/7187 - 182s - loss: 1.3741 - acc: 0.2865 - val_loss: 1.3720 - val_acc: 0.2903
+2019-11-17 05:31:45.998774: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 91/500
+
+Epoch 00091: val_acc did not improve from 0.29748
+7187/7187 - 183s - loss: 1.3729 - acc: 0.2885 - val_loss: 1.3724 - val_acc: 0.2901
+2019-11-17 05:34:49.177332: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 92/500
+
+Epoch 00092: val_acc did not improve from 0.29748
+7187/7187 - 183s - loss: 1.3728 - acc: 0.2874 - val_loss: 1.3714 - val_acc: 0.2955
+2019-11-17 05:37:52.033760: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 93/500
+
+Epoch 00093: val_acc did not improve from 0.29748
+7187/7187 - 183s - loss: 1.3732 - acc: 0.2911 - val_loss: 1.3709 - val_acc: 0.2931
+2019-11-17 05:40:54.731114: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 94/500
+
+Epoch 00094: val_acc did not improve from 0.29748
+7187/7187 - 183s - loss: 1.3730 - acc: 0.2892 - val_loss: 1.3714 - val_acc: 0.2959
+2019-11-17 05:43:59.040330: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 95/500
+
+Epoch 00095: val_acc did not improve from 0.29748
+7187/7187 - 184s - loss: 1.3729 - acc: 0.2894 - val_loss: 1.3704 - val_acc: 0.2935
+2019-11-17 05:47:02.811186: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 96/500
+
+Epoch 00096: val_acc did not improve from 0.29748
+7187/7187 - 184s - loss: 1.3725 - acc: 0.2906 - val_loss: 1.3712 - val_acc: 0.2885
+2019-11-17 05:50:07.001117: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 97/500
+
+Epoch 00097: val_acc did not improve from 0.29748
+7187/7187 - 184s - loss: 1.3735 - acc: 0.2887 - val_loss: 1.3717 - val_acc: 0.2901
+2019-11-17 05:53:11.041904: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 98/500
+
+Epoch 00098: val_acc did not improve from 0.29748
+7187/7187 - 184s - loss: 1.3726 - acc: 0.2894 - val_loss: 1.3720 - val_acc: 0.2957
+2019-11-17 05:56:14.770419: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 99/500
+
+Epoch 00099: val_acc did not improve from 0.29748
+7187/7187 - 184s - loss: 1.3732 - acc: 0.2885 - val_loss: 1.3730 - val_acc: 0.2929
+2019-11-17 05:59:18.130313: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 100/500
+
+Epoch 00100: val_acc did not improve from 0.29748
+7187/7187 - 183s - loss: 1.3728 - acc: 0.2903 - val_loss: 1.3720 - val_acc: 0.2945
+2019-11-17 06:02:21.770153: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 101/500
+
+Epoch 00101: val_acc did not improve from 0.29748
+7187/7187 - 184s - loss: 1.3720 - acc: 0.2924 - val_loss: 1.3734 - val_acc: 0.2915
+2019-11-17 06:05:24.896750: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 102/500
+
+Epoch 00102: val_acc improved from 0.29748 to 0.30329, saving model to model.h5
+7187/7187 - 183s - loss: 1.3725 - acc: 0.2887 - val_loss: 1.3688 - val_acc: 0.3033
+2019-11-17 06:08:27.685679: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 103/500
+
+Epoch 00103: val_acc did not improve from 0.30329
+7187/7187 - 183s - loss: 1.3721 - acc: 0.2917 - val_loss: 1.3715 - val_acc: 0.2973
+2019-11-17 06:11:31.397931: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 104/500
+
+Epoch 00104: val_acc did not improve from 0.30329
+7187/7187 - 184s - loss: 1.3716 - acc: 0.2916 - val_loss: 1.3687 - val_acc: 0.2995
+2019-11-17 06:14:35.473292: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 105/500
+
+Epoch 00105: val_acc did not improve from 0.30329
+7187/7187 - 184s - loss: 1.3715 - acc: 0.2915 - val_loss: 1.3706 - val_acc: 0.2973
+2019-11-17 06:17:39.261310: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 106/500
+
+Epoch 00106: val_acc did not improve from 0.30329
+7187/7187 - 184s - loss: 1.3713 - acc: 0.2917 - val_loss: 1.3692 - val_acc: 0.3011
+2019-11-17 06:20:42.967831: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 107/500
+
+Epoch 00107: val_acc did not improve from 0.30329
+7187/7187 - 184s - loss: 1.3708 - acc: 0.2927 - val_loss: 1.3677 - val_acc: 0.3015
+2019-11-17 06:23:46.180144: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 108/500
+
+Epoch 00108: val_acc did not improve from 0.30329
+7187/7187 - 183s - loss: 1.3710 - acc: 0.2941 - val_loss: 1.3696 - val_acc: 0.3023
+2019-11-17 06:26:49.444403: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 109/500
+
+Epoch 00109: val_acc did not improve from 0.30329
+7187/7187 - 183s - loss: 1.3696 - acc: 0.2953 - val_loss: 1.3653 - val_acc: 0.3025
+2019-11-17 06:29:53.407586: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 110/500
+
+Epoch 00110: val_acc improved from 0.30329 to 0.31230, saving model to model.h5
+7187/7187 - 184s - loss: 1.3669 - acc: 0.2987 - val_loss: 1.3626 - val_acc: 0.3123
+2019-11-17 06:32:57.186898: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 111/500
+
+Epoch 00111: val_acc improved from 0.31230 to 0.35276, saving model to model.h5
+7187/7187 - 184s - loss: 1.2853 - acc: 0.3514 - val_loss: 1.2839 - val_acc: 0.3528
+2019-11-17 06:36:01.856838: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 112/500
+
+Epoch 00112: val_acc improved from 0.35276 to 0.40865, saving model to model.h5
+7187/7187 - 184s - loss: 1.0494 - acc: 0.4331 - val_loss: 1.1242 - val_acc: 0.4087
+2019-11-17 06:39:05.466538: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 113/500
+
+Epoch 00113: val_acc did not improve from 0.40865
+7187/7187 - 184s - loss: 0.9420 - acc: 0.4597 - val_loss: 1.2217 - val_acc: 0.4000
+2019-11-17 06:42:09.482725: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 114/500
+
+Epoch 00114: val_acc improved from 0.40865 to 0.44591, saving model to model.h5
+7187/7187 - 184s - loss: 0.8779 - acc: 0.4814 - val_loss: 1.2549 - val_acc: 0.4459
+2019-11-17 06:45:13.688180: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 115/500
+
+Epoch 00115: val_acc improved from 0.44591 to 0.47977, saving model to model.h5
+7187/7187 - 184s - loss: 0.8443 - acc: 0.4985 - val_loss: 1.0339 - val_acc: 0.4798
+2019-11-17 06:48:17.739590: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 116/500
+
+Epoch 00116: val_acc did not improve from 0.47977
+7187/7187 - 184s - loss: 0.8127 - acc: 0.5219 - val_loss: 1.0726 - val_acc: 0.4738
+2019-11-17 06:51:21.771723: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 117/500
+
+Epoch 00117: val_acc did not improve from 0.47977
+7187/7187 - 184s - loss: 0.7990 - acc: 0.5451 - val_loss: 1.2654 - val_acc: 0.4685
+2019-11-17 06:54:25.802257: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 118/500
+
+Epoch 00118: val_acc improved from 0.47977 to 0.66086, saving model to model.h5
+7187/7187 - 184s - loss: 0.7106 - acc: 0.6217 - val_loss: 0.6727 - val_acc: 0.6609
+2019-11-17 06:57:29.707796: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 119/500
+
+Epoch 00119: val_acc improved from 0.66086 to 0.76603, saving model to model.h5
+7187/7187 - 184s - loss: 0.5650 - acc: 0.7164 - val_loss: 0.5201 - val_acc: 0.7660
+2019-11-17 07:00:33.865791: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 120/500
+
+Epoch 00120: val_acc improved from 0.76603 to 0.83133, saving model to model.h5
+7187/7187 - 184s - loss: 0.3896 - acc: 0.8483 - val_loss: 0.5198 - val_acc: 0.8313
+2019-11-17 07:03:37.926303: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 121/500
+
+Epoch 00121: val_acc improved from 0.83133 to 0.88822, saving model to model.h5
+7187/7187 - 184s - loss: 0.2348 - acc: 0.9183 - val_loss: 0.3425 - val_acc: 0.8882
+2019-11-17 07:06:42.142202: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 122/500
+
+Epoch 00122: val_acc improved from 0.88822 to 0.91927, saving model to model.h5
+7187/7187 - 184s - loss: 0.1863 - acc: 0.9356 - val_loss: 0.2782 - val_acc: 0.9193
+2019-11-17 07:09:46.028529: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 123/500
+
+Epoch 00123: val_acc improved from 0.91927 to 0.94591, saving model to model.h5
+7187/7187 - 184s - loss: 0.1551 - acc: 0.9459 - val_loss: 0.1546 - val_acc: 0.9459
+2019-11-17 07:12:49.517789: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 124/500
+
+Epoch 00124: val_acc improved from 0.94591 to 0.94872, saving model to model.h5
+7187/7187 - 183s - loss: 0.1390 - acc: 0.9518 - val_loss: 0.1831 - val_acc: 0.9487
+2019-11-17 07:15:52.458193: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 125/500
+
+Epoch 00125: val_acc improved from 0.94872 to 0.95773, saving model to model.h5
+7187/7187 - 183s - loss: 0.1304 - acc: 0.9546 - val_loss: 0.1440 - val_acc: 0.9577
+2019-11-17 07:18:55.704130: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 126/500
+
+Epoch 00126: val_acc did not improve from 0.95773
+7187/7187 - 183s - loss: 0.1180 - acc: 0.9591 - val_loss: 0.1537 - val_acc: 0.9537
+2019-11-17 07:21:58.930530: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 127/500
+
+Epoch 00127: val_acc improved from 0.95773 to 0.96554, saving model to model.h5
+7187/7187 - 183s - loss: 0.1062 - acc: 0.9638 - val_loss: 0.0985 - val_acc: 0.9655
+2019-11-17 07:25:02.498454: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 128/500
+
+Epoch 00128: val_acc did not improve from 0.96554
+7187/7187 - 184s - loss: 0.1100 - acc: 0.9618 - val_loss: 0.1529 - val_acc: 0.9609
+2019-11-17 07:28:06.472344: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 129/500
+
+Epoch 00129: val_acc did not improve from 0.96554
+7187/7187 - 184s - loss: 0.1015 - acc: 0.9643 - val_loss: 0.1288 - val_acc: 0.9637
+2019-11-17 07:31:10.273820: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 130/500
+
+Epoch 00130: val_acc did not improve from 0.96554
+7187/7187 - 184s - loss: 0.0961 - acc: 0.9666 - val_loss: 0.2635 - val_acc: 0.9381
+2019-11-17 07:34:14.213474: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 131/500
+
+Epoch 00131: val_acc improved from 0.96554 to 0.96635, saving model to model.h5
+7187/7187 - 184s - loss: 0.0920 - acc: 0.9683 - val_loss: 0.1302 - val_acc: 0.9663
+2019-11-17 07:37:18.393508: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 132/500
+
+Epoch 00132: val_acc improved from 0.96635 to 0.96935, saving model to model.h5
+7187/7187 - 184s - loss: 0.0878 - acc: 0.9689 - val_loss: 0.1168 - val_acc: 0.9694
+2019-11-17 07:40:22.613040: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 133/500
+
+Epoch 00133: val_acc did not improve from 0.96935
+7187/7187 - 184s - loss: 0.0836 - acc: 0.9707 - val_loss: 0.1649 - val_acc: 0.9587
+2019-11-17 07:43:26.712525: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 134/500
+
+Epoch 00134: val_acc did not improve from 0.96935
+7187/7187 - 184s - loss: 0.0806 - acc: 0.9717 - val_loss: 0.1659 - val_acc: 0.9595
+2019-11-17 07:46:30.687349: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 135/500
+
+Epoch 00135: val_acc did not improve from 0.96935
+7187/7187 - 184s - loss: 0.0801 - acc: 0.9720 - val_loss: 0.1582 - val_acc: 0.9615
+2019-11-17 07:49:34.198071: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 136/500
+
+Epoch 00136: val_acc did not improve from 0.96935
+7187/7187 - 183s - loss: 0.0733 - acc: 0.9745 - val_loss: 0.1566 - val_acc: 0.9647
+2019-11-17 07:52:37.618238: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 137/500
+
+Epoch 00137: val_acc did not improve from 0.96935
+7187/7187 - 183s - loss: 0.0686 - acc: 0.9763 - val_loss: 0.1531 - val_acc: 0.9663
+2019-11-17 07:55:40.810880: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 138/500
+
+Epoch 00138: val_acc did not improve from 0.96935
+7187/7187 - 183s - loss: 0.0686 - acc: 0.9764 - val_loss: 0.1438 - val_acc: 0.9647
+2019-11-17 07:58:45.138988: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 139/500
+
+Epoch 00139: val_acc improved from 0.96935 to 0.97496, saving model to model.h5
+7187/7187 - 184s - loss: 0.0657 - acc: 0.9769 - val_loss: 0.0901 - val_acc: 0.9750
+2019-11-17 08:01:49.240890: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 140/500
+
+Epoch 00140: val_acc did not improve from 0.97496
+7187/7187 - 184s - loss: 0.0632 - acc: 0.9782 - val_loss: 0.1535 - val_acc: 0.9633
+2019-11-17 08:04:52.945744: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 141/500
+
+Epoch 00141: val_acc did not improve from 0.97496
+7187/7187 - 184s - loss: 0.0585 - acc: 0.9799 - val_loss: 0.1391 - val_acc: 0.9685
+2019-11-17 08:07:57.577117: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 142/500
+
+Epoch 00142: val_acc did not improve from 0.97496
+7187/7187 - 185s - loss: 0.0589 - acc: 0.9795 - val_loss: 0.0965 - val_acc: 0.9748
+2019-11-17 08:11:02.013363: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 143/500
+
+Epoch 00143: val_acc improved from 0.97496 to 0.97616, saving model to model.h5
+7187/7187 - 185s - loss: 0.0563 - acc: 0.9803 - val_loss: 0.0965 - val_acc: 0.9762
+2019-11-17 08:14:06.474180: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 144/500
+
+Epoch 00144: val_acc did not improve from 0.97616
+7187/7187 - 184s - loss: 0.0573 - acc: 0.9803 - val_loss: 0.1457 - val_acc: 0.9694
+2019-11-17 08:17:10.409095: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 145/500
+
+Epoch 00145: val_acc did not improve from 0.97616
+7187/7187 - 184s - loss: 0.0558 - acc: 0.9811 - val_loss: 0.1070 - val_acc: 0.9744
+2019-11-17 08:20:14.296700: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 146/500
+
+Epoch 00146: val_acc did not improve from 0.97616
+7187/7187 - 184s - loss: 0.0546 - acc: 0.9810 - val_loss: 0.1345 - val_acc: 0.9710
+2019-11-17 08:23:18.290128: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 147/500
+
+Epoch 00147: val_acc did not improve from 0.97616
+7187/7187 - 184s - loss: 0.0537 - acc: 0.9809 - val_loss: 0.1455 - val_acc: 0.9675
+2019-11-17 08:26:22.447901: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 148/500
+
+Epoch 00148: val_acc did not improve from 0.97616
+7187/7187 - 184s - loss: 0.0509 - acc: 0.9826 - val_loss: 0.1105 - val_acc: 0.9736
+2019-11-17 08:29:26.621671: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 149/500
+
+Epoch 00149: val_acc did not improve from 0.97616
+7187/7187 - 184s - loss: 0.0508 - acc: 0.9823 - val_loss: 0.1234 - val_acc: 0.9726
+2019-11-17 08:32:30.590629: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 150/500
+
+Epoch 00150: val_acc improved from 0.97616 to 0.97716, saving model to model.h5
+7187/7187 - 184s - loss: 0.0476 - acc: 0.9836 - val_loss: 0.1028 - val_acc: 0.9772
+2019-11-17 08:35:35.073107: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 151/500
+
+Epoch 00151: val_acc did not improve from 0.97716
+7187/7187 - 184s - loss: 0.0481 - acc: 0.9831 - val_loss: 0.1118 - val_acc: 0.9742
+2019-11-17 08:38:38.795038: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 152/500
+
+Epoch 00152: val_acc did not improve from 0.97716
+7187/7187 - 184s - loss: 0.0482 - acc: 0.9833 - val_loss: 0.1168 - val_acc: 0.9726
+2019-11-17 08:41:42.814988: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 153/500
+
+Epoch 00153: val_acc improved from 0.97716 to 0.98438, saving model to model.h5
+7187/7187 - 184s - loss: 0.0444 - acc: 0.9848 - val_loss: 0.0688 - val_acc: 0.9844
+2019-11-17 08:44:47.300047: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 154/500
+
+Epoch 00154: val_acc did not improve from 0.98438
+7187/7187 - 184s - loss: 0.0452 - acc: 0.9845 - val_loss: 0.1192 - val_acc: 0.9748
+2019-11-17 08:47:51.652367: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 155/500
+
+Epoch 00155: val_acc did not improve from 0.98438
+7187/7187 - 184s - loss: 0.0434 - acc: 0.9847 - val_loss: 0.0977 - val_acc: 0.9784
+2019-11-17 08:50:55.621705: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 156/500
+
+Epoch 00156: val_acc did not improve from 0.98438
+7187/7187 - 184s - loss: 0.0456 - acc: 0.9840 - val_loss: 0.1472 - val_acc: 0.9665
+2019-11-17 08:53:59.412849: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 157/500
+
+Epoch 00157: val_acc did not improve from 0.98438
+7187/7187 - 184s - loss: 0.0439 - acc: 0.9850 - val_loss: 0.1379 - val_acc: 0.9730
+2019-11-17 08:57:02.658999: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 158/500
+
+Epoch 00158: val_acc did not improve from 0.98438
+7187/7187 - 183s - loss: 0.0419 - acc: 0.9855 - val_loss: 0.1208 - val_acc: 0.9770
+2019-11-17 09:00:05.794183: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 159/500
+
+Epoch 00159: val_acc did not improve from 0.98438
+7187/7187 - 183s - loss: 0.0421 - acc: 0.9857 - val_loss: 0.0845 - val_acc: 0.9782
+2019-11-17 09:03:09.946242: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 160/500
+
+Epoch 00160: val_acc did not improve from 0.98438
+7187/7187 - 184s - loss: 0.0406 - acc: 0.9858 - val_loss: 0.0989 - val_acc: 0.9788
+2019-11-17 09:06:13.794678: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 161/500
+
+Epoch 00161: val_acc did not improve from 0.98438
+7187/7187 - 184s - loss: 0.0404 - acc: 0.9860 - val_loss: 0.1339 - val_acc: 0.9718
+2019-11-17 09:09:17.546513: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 162/500
+
+Epoch 00162: val_acc did not improve from 0.98438
+7187/7187 - 184s - loss: 0.0397 - acc: 0.9863 - val_loss: 0.1160 - val_acc: 0.9772
+2019-11-17 09:12:21.595618: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 163/500
+
+Epoch 00163: val_acc did not improve from 0.98438
+7187/7187 - 184s - loss: 0.0397 - acc: 0.9866 - val_loss: 0.0921 - val_acc: 0.9792
+2019-11-17 09:15:25.812708: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 164/500
+
+Epoch 00164: val_acc did not improve from 0.98438
+7187/7187 - 184s - loss: 0.0386 - acc: 0.9869 - val_loss: 0.1505 - val_acc: 0.9718
+2019-11-17 09:18:29.943504: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 165/500
+
+Epoch 00165: val_acc did not improve from 0.98438
+7187/7187 - 184s - loss: 0.0372 - acc: 0.9867 - val_loss: 0.0793 - val_acc: 0.9822
+2019-11-17 09:21:34.199767: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 166/500
+
+Epoch 00166: val_acc did not improve from 0.98438
+7187/7187 - 184s - loss: 0.0380 - acc: 0.9871 - val_loss: 0.0809 - val_acc: 0.9808
+2019-11-17 09:24:38.332298: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 167/500
+
+Epoch 00167: val_acc improved from 0.98438 to 0.98558, saving model to model.h5
+7187/7187 - 184s - loss: 0.0371 - acc: 0.9869 - val_loss: 0.0656 - val_acc: 0.9856
+2019-11-17 09:27:42.710559: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 168/500
+
+Epoch 00168: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0373 - acc: 0.9875 - val_loss: 0.0971 - val_acc: 0.9798
+2019-11-17 09:30:47.066042: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 169/500
+
+Epoch 00169: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0372 - acc: 0.9875 - val_loss: 0.0934 - val_acc: 0.9794
+2019-11-17 09:33:51.420544: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 170/500
+
+Epoch 00170: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0365 - acc: 0.9875 - val_loss: 0.1204 - val_acc: 0.9748
+2019-11-17 09:36:55.657704: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 171/500
+
+Epoch 00171: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0347 - acc: 0.9882 - val_loss: 0.1344 - val_acc: 0.9744
+2019-11-17 09:39:59.911010: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 172/500
+
+Epoch 00172: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0353 - acc: 0.9878 - val_loss: 0.1287 - val_acc: 0.9762
+2019-11-17 09:43:03.807658: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 173/500
+
+Epoch 00173: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0343 - acc: 0.9883 - val_loss: 0.1585 - val_acc: 0.9690
+2019-11-17 09:46:07.704722: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 174/500
+
+Epoch 00174: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0346 - acc: 0.9880 - val_loss: 0.1054 - val_acc: 0.9766
+2019-11-17 09:49:11.839425: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 175/500
+
+Epoch 00175: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0356 - acc: 0.9875 - val_loss: 0.1021 - val_acc: 0.9790
+2019-11-17 09:52:16.106581: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 176/500
+
+Epoch 00176: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0336 - acc: 0.9882 - val_loss: 0.1127 - val_acc: 0.9744
+2019-11-17 09:55:20.563597: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 177/500
+
+Epoch 00177: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0332 - acc: 0.9889 - val_loss: 0.1323 - val_acc: 0.9712
+2019-11-17 09:58:25.014422: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 178/500
+
+Epoch 00178: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0337 - acc: 0.9885 - val_loss: 0.1289 - val_acc: 0.9740
+2019-11-17 10:01:29.123853: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 179/500
+
+Epoch 00179: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0318 - acc: 0.9891 - val_loss: 0.1028 - val_acc: 0.9798
+2019-11-17 10:04:33.233136: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 180/500
+
+Epoch 00180: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0326 - acc: 0.9886 - val_loss: 0.0901 - val_acc: 0.9806
+2019-11-17 10:07:37.582964: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 181/500
+
+Epoch 00181: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0325 - acc: 0.9888 - val_loss: 0.1192 - val_acc: 0.9752
+2019-11-17 10:10:41.973358: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 182/500
+
+Epoch 00182: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0338 - acc: 0.9886 - val_loss: 0.1133 - val_acc: 0.9790
+2019-11-17 10:13:46.256594: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 183/500
+
+Epoch 00183: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0314 - acc: 0.9894 - val_loss: 0.1080 - val_acc: 0.9780
+2019-11-17 10:16:50.165808: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 184/500
+
+Epoch 00184: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0312 - acc: 0.9894 - val_loss: 0.0791 - val_acc: 0.9834
+2019-11-17 10:19:53.413551: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 185/500
+
+Epoch 00185: val_acc did not improve from 0.98558
+7187/7187 - 183s - loss: 0.0305 - acc: 0.9894 - val_loss: 0.0763 - val_acc: 0.9842
+2019-11-17 10:22:55.755999: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 186/500
+
+Epoch 00186: val_acc did not improve from 0.98558
+7187/7187 - 182s - loss: 0.0301 - acc: 0.9895 - val_loss: 0.1025 - val_acc: 0.9804
+2019-11-17 10:25:58.657422: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 187/500
+
+Epoch 00187: val_acc did not improve from 0.98558
+7187/7187 - 183s - loss: 0.0291 - acc: 0.9898 - val_loss: 0.1280 - val_acc: 0.9722
+2019-11-17 10:29:02.253313: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 188/500
+
+Epoch 00188: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0307 - acc: 0.9895 - val_loss: 0.1186 - val_acc: 0.9790
+2019-11-17 10:32:06.540664: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 189/500
+
+Epoch 00189: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0291 - acc: 0.9901 - val_loss: 0.1130 - val_acc: 0.9764
+2019-11-17 10:35:10.667589: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 190/500
+
+Epoch 00190: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0293 - acc: 0.9898 - val_loss: 0.1009 - val_acc: 0.9802
+2019-11-17 10:38:15.007033: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 191/500
+
+Epoch 00191: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0310 - acc: 0.9894 - val_loss: 0.1126 - val_acc: 0.9772
+2019-11-17 10:41:18.667411: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 192/500
+
+Epoch 00192: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0299 - acc: 0.9897 - val_loss: 0.1290 - val_acc: 0.9730
+2019-11-17 10:44:22.156913: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 193/500
+
+Epoch 00193: val_acc did not improve from 0.98558
+7187/7187 - 183s - loss: 0.0302 - acc: 0.9893 - val_loss: 0.0921 - val_acc: 0.9818
+2019-11-17 10:47:25.816270: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 194/500
+
+Epoch 00194: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0266 - acc: 0.9907 - val_loss: 0.1118 - val_acc: 0.9798
+2019-11-17 10:50:28.755481: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 195/500
+
+Epoch 00195: val_acc did not improve from 0.98558
+7187/7187 - 183s - loss: 0.0271 - acc: 0.9908 - val_loss: 0.0698 - val_acc: 0.9854
+2019-11-17 10:53:31.978364: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 196/500
+
+Epoch 00196: val_acc did not improve from 0.98558
+7187/7187 - 183s - loss: 0.0270 - acc: 0.9905 - val_loss: 0.1022 - val_acc: 0.9786
+2019-11-17 10:56:36.022929: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 197/500
+
+Epoch 00197: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0289 - acc: 0.9899 - val_loss: 0.1097 - val_acc: 0.9802
+2019-11-17 10:59:40.051906: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 198/500
+
+Epoch 00198: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0286 - acc: 0.9902 - val_loss: 0.1162 - val_acc: 0.9776
+2019-11-17 11:02:44.210240: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 199/500
+
+Epoch 00199: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0276 - acc: 0.9904 - val_loss: 0.1119 - val_acc: 0.9788
+2019-11-17 11:05:48.216883: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 200/500
+
+Epoch 00200: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0280 - acc: 0.9904 - val_loss: 0.1333 - val_acc: 0.9774
+2019-11-17 11:08:52.239965: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 201/500
+
+Epoch 00201: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0276 - acc: 0.9903 - val_loss: 0.1139 - val_acc: 0.9792
+2019-11-17 11:11:56.207780: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 202/500
+
+Epoch 00202: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0262 - acc: 0.9909 - val_loss: 0.0885 - val_acc: 0.9826
+2019-11-17 11:15:00.360894: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 203/500
+
+Epoch 00203: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0268 - acc: 0.9908 - val_loss: 0.0806 - val_acc: 0.9830
+2019-11-17 11:18:04.262764: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 204/500
+
+Epoch 00204: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0279 - acc: 0.9903 - val_loss: 0.1165 - val_acc: 0.9790
+2019-11-17 11:21:07.828344: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 205/500
+
+Epoch 00205: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0281 - acc: 0.9906 - val_loss: 0.0842 - val_acc: 0.9826
+2019-11-17 11:24:11.495158: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 206/500
+
+Epoch 00206: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0261 - acc: 0.9910 - val_loss: 0.0725 - val_acc: 0.9818
+2019-11-17 11:27:14.609688: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 207/500
+
+Epoch 00207: val_acc did not improve from 0.98558
+7187/7187 - 183s - loss: 0.0277 - acc: 0.9901 - val_loss: 0.0731 - val_acc: 0.9828
+2019-11-17 11:30:17.281990: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 208/500
+
+Epoch 00208: val_acc did not improve from 0.98558
+7187/7187 - 183s - loss: 0.0257 - acc: 0.9910 - val_loss: 0.0799 - val_acc: 0.9832
+2019-11-17 11:33:20.805972: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 209/500
+
+Epoch 00209: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0257 - acc: 0.9911 - val_loss: 0.0778 - val_acc: 0.9824
+2019-11-17 11:36:23.445888: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 210/500
+
+Epoch 00210: val_acc did not improve from 0.98558
+7187/7187 - 183s - loss: 0.0252 - acc: 0.9915 - val_loss: 0.0871 - val_acc: 0.9816
+2019-11-17 11:39:26.441115: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 211/500
+
+Epoch 00211: val_acc did not improve from 0.98558
+7187/7187 - 183s - loss: 0.0244 - acc: 0.9914 - val_loss: 0.0771 - val_acc: 0.9836
+2019-11-17 11:42:30.436518: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 212/500
+
+Epoch 00212: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0270 - acc: 0.9906 - val_loss: 0.0787 - val_acc: 0.9832
+2019-11-17 11:45:34.659390: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 213/500
+
+Epoch 00213: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0247 - acc: 0.9913 - val_loss: 0.1220 - val_acc: 0.9766
+2019-11-17 11:48:38.913056: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 214/500
+
+Epoch 00214: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0259 - acc: 0.9909 - val_loss: 0.1058 - val_acc: 0.9790
+2019-11-17 11:51:42.616019: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 215/500
+
+Epoch 00215: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0247 - acc: 0.9917 - val_loss: 0.0836 - val_acc: 0.9830
+2019-11-17 11:54:46.189814: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 216/500
+
+Epoch 00216: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0260 - acc: 0.9912 - val_loss: 0.1443 - val_acc: 0.9760
+2019-11-17 11:57:50.079031: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 217/500
+
+Epoch 00217: val_acc did not improve from 0.98558
+7187/7187 - 184s - loss: 0.0245 - acc: 0.9913 - val_loss: 0.0826 - val_acc: 0.9812
+2019-11-17 12:00:53.654938: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 218/500
+
+Epoch 00218: val_acc improved from 0.98558 to 0.98618, saving model to model.h5
+7187/7187 - 184s - loss: 0.0234 - acc: 0.9918 - val_loss: 0.0653 - val_acc: 0.9862
+2019-11-17 12:03:56.314574: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 219/500
+
+Epoch 00219: val_acc did not improve from 0.98618
+7187/7187 - 183s - loss: 0.0236 - acc: 0.9919 - val_loss: 0.1283 - val_acc: 0.9766
+2019-11-17 12:07:00.007025: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 220/500
+
+Epoch 00220: val_acc did not improve from 0.98618
+7187/7187 - 184s - loss: 0.0245 - acc: 0.9916 - val_loss: 0.0917 - val_acc: 0.9828
+2019-11-17 12:10:04.104511: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 221/500
+
+Epoch 00221: val_acc did not improve from 0.98618
+7187/7187 - 184s - loss: 0.0238 - acc: 0.9919 - val_loss: 0.0911 - val_acc: 0.9834
+2019-11-17 12:13:08.473883: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 222/500
+
+Epoch 00222: val_acc did not improve from 0.98618
+7187/7187 - 184s - loss: 0.0249 - acc: 0.9911 - val_loss: 0.0784 - val_acc: 0.9822
+2019-11-17 12:16:12.693505: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 223/500
+
+Epoch 00223: val_acc did not improve from 0.98618
+7187/7187 - 184s - loss: 0.0238 - acc: 0.9917 - val_loss: 0.1265 - val_acc: 0.9764
+2019-11-17 12:19:16.384092: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 224/500
+
+Epoch 00224: val_acc did not improve from 0.98618
+7187/7187 - 184s - loss: 0.0229 - acc: 0.9921 - val_loss: 0.0762 - val_acc: 0.9842
+2019-11-17 12:22:20.448868: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 225/500
+
+Epoch 00225: val_acc did not improve from 0.98618
+7187/7187 - 184s - loss: 0.0239 - acc: 0.9917 - val_loss: 0.1167 - val_acc: 0.9792
+2019-11-17 12:25:24.774197: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 226/500
+
+Epoch 00226: val_acc did not improve from 0.98618
+7187/7187 - 184s - loss: 0.0222 - acc: 0.9924 - val_loss: 0.1217 - val_acc: 0.9788
+2019-11-17 12:28:28.557706: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 227/500
+
+Epoch 00227: val_acc did not improve from 0.98618
+7187/7187 - 184s - loss: 0.0220 - acc: 0.9924 - val_loss: 0.0930 - val_acc: 0.9822
+2019-11-17 12:31:32.735242: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 228/500
+
+Epoch 00228: val_acc did not improve from 0.98618
+7187/7187 - 184s - loss: 0.0217 - acc: 0.9927 - val_loss: 0.0907 - val_acc: 0.9816
+2019-11-17 12:34:36.725342: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 229/500
+
+Epoch 00229: val_acc improved from 0.98618 to 0.98638, saving model to model.h5
+7187/7187 - 184s - loss: 0.0232 - acc: 0.9921 - val_loss: 0.0603 - val_acc: 0.9864
+2019-11-17 12:37:40.687189: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 230/500
+
+Epoch 00230: val_acc did not improve from 0.98638
+7187/7187 - 184s - loss: 0.0221 - acc: 0.9924 - val_loss: 0.1138 - val_acc: 0.9794
+2019-11-17 12:40:44.254546: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 231/500
+
+Epoch 00231: val_acc did not improve from 0.98638
+7187/7187 - 184s - loss: 0.0229 - acc: 0.9919 - val_loss: 0.0807 - val_acc: 0.9842
+2019-11-17 12:43:47.321758: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 232/500
+
+Epoch 00232: val_acc did not improve from 0.98638
+7187/7187 - 183s - loss: 0.0226 - acc: 0.9923 - val_loss: 0.1075 - val_acc: 0.9802
+2019-11-17 12:46:50.537700: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 233/500
+
+Epoch 00233: val_acc did not improve from 0.98638
+7187/7187 - 183s - loss: 0.0228 - acc: 0.9921 - val_loss: 0.1058 - val_acc: 0.9794
+2019-11-17 12:49:53.916561: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 234/500
+
+Epoch 00234: val_acc did not improve from 0.98638
+7187/7187 - 183s - loss: 0.0210 - acc: 0.9929 - val_loss: 0.0869 - val_acc: 0.9830
+2019-11-17 12:52:57.607057: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 235/500
+
+Epoch 00235: val_acc improved from 0.98638 to 0.98698, saving model to model.h5
+7187/7187 - 184s - loss: 0.0233 - acc: 0.9919 - val_loss: 0.0631 - val_acc: 0.9870
+2019-11-17 12:56:01.344127: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 236/500
+
+Epoch 00236: val_acc did not improve from 0.98698
+7187/7187 - 184s - loss: 0.0216 - acc: 0.9926 - val_loss: 0.0740 - val_acc: 0.9848
+2019-11-17 12:59:04.724611: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 237/500
+
+Epoch 00237: val_acc did not improve from 0.98698
+7187/7187 - 183s - loss: 0.0216 - acc: 0.9925 - val_loss: 0.0996 - val_acc: 0.9816
+2019-11-17 13:02:08.609247: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 238/500
+
+Epoch 00238: val_acc did not improve from 0.98698
+7187/7187 - 184s - loss: 0.0206 - acc: 0.9928 - val_loss: 0.0948 - val_acc: 0.9818
+2019-11-17 13:05:12.979527: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 239/500
+
+Epoch 00239: val_acc did not improve from 0.98698
+7187/7187 - 184s - loss: 0.0208 - acc: 0.9927 - val_loss: 0.0722 - val_acc: 0.9848
+2019-11-17 13:08:16.991981: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 240/500
+
+Epoch 00240: val_acc did not improve from 0.98698
+7187/7187 - 184s - loss: 0.0208 - acc: 0.9933 - val_loss: 0.1165 - val_acc: 0.9816
+2019-11-17 13:11:20.955675: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 241/500
+
+Epoch 00241: val_acc did not improve from 0.98698
+7187/7187 - 184s - loss: 0.0210 - acc: 0.9928 - val_loss: 0.0887 - val_acc: 0.9824
+2019-11-17 13:14:25.218954: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 242/500
+
+Epoch 00242: val_acc did not improve from 0.98698
+7187/7187 - 184s - loss: 0.0218 - acc: 0.9926 - val_loss: 0.0713 - val_acc: 0.9848
+2019-11-17 13:17:29.297893: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 243/500
+
+Epoch 00243: val_acc did not improve from 0.98698
+7187/7187 - 184s - loss: 0.0212 - acc: 0.9930 - val_loss: 0.1067 - val_acc: 0.9820
+2019-11-17 13:20:33.452484: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 244/500
+
+Epoch 00244: val_acc did not improve from 0.98698
+7187/7187 - 184s - loss: 0.0198 - acc: 0.9931 - val_loss: 0.0853 - val_acc: 0.9828
+2019-11-17 13:23:37.428944: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 245/500
+
+Epoch 00245: val_acc did not improve from 0.98698
+7187/7187 - 184s - loss: 0.0216 - acc: 0.9926 - val_loss: 0.0986 - val_acc: 0.9806
+2019-11-17 13:26:41.658018: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 246/500
+
+Epoch 00246: val_acc did not improve from 0.98698
+7187/7187 - 184s - loss: 0.0200 - acc: 0.9932 - val_loss: 0.1077 - val_acc: 0.9804
+2019-11-17 13:29:45.421397: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 247/500
+
+Epoch 00247: val_acc did not improve from 0.98698
+7187/7187 - 184s - loss: 0.0209 - acc: 0.9929 - val_loss: 0.0658 - val_acc: 0.9862
+2019-11-17 13:32:49.153186: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 248/500
+
+Epoch 00248: val_acc did not improve from 0.98698
+7187/7187 - 184s - loss: 0.0192 - acc: 0.9935 - val_loss: 0.0700 - val_acc: 0.9868
+2019-11-17 13:35:53.222823: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 249/500
+
+Epoch 00249: val_acc did not improve from 0.98698
+7187/7187 - 184s - loss: 0.0222 - acc: 0.9926 - val_loss: 0.0820 - val_acc: 0.9844
+2019-11-17 13:38:57.532888: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 250/500
+
+Epoch 00250: val_acc did not improve from 0.98698
+7187/7187 - 184s - loss: 0.0191 - acc: 0.9931 - val_loss: 0.1808 - val_acc: 0.9814
+2019-11-17 13:42:01.531873: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 251/500
+
+Epoch 00251: val_acc improved from 0.98698 to 0.98738, saving model to model.h5
+7187/7187 - 184s - loss: 0.0204 - acc: 0.9930 - val_loss: 0.0552 - val_acc: 0.9874
+2019-11-17 13:45:05.172433: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 252/500
+
+Epoch 00252: val_acc did not improve from 0.98738
+7187/7187 - 184s - loss: 0.0194 - acc: 0.9933 - val_loss: 0.0859 - val_acc: 0.9844
+2019-11-17 13:48:08.864650: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 253/500
+
+Epoch 00253: val_acc did not improve from 0.98738
+7187/7187 - 184s - loss: 0.0197 - acc: 0.9932 - val_loss: 0.0836 - val_acc: 0.9830
+2019-11-17 13:51:12.438527: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 254/500
+
+Epoch 00254: val_acc did not improve from 0.98738
+7187/7187 - 184s - loss: 0.0188 - acc: 0.9936 - val_loss: 0.0801 - val_acc: 0.9838
+2019-11-17 13:54:15.078491: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 255/500
+
+Epoch 00255: val_acc did not improve from 0.98738
+7187/7187 - 183s - loss: 0.0188 - acc: 0.9936 - val_loss: 0.0733 - val_acc: 0.9860
+2019-11-17 13:57:18.919617: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 256/500
+
+Epoch 00256: val_acc did not improve from 0.98738
+7187/7187 - 184s - loss: 0.0185 - acc: 0.9935 - val_loss: 0.0961 - val_acc: 0.9816
+2019-11-17 14:00:22.766906: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 257/500
+
+Epoch 00257: val_acc did not improve from 0.98738
+7187/7187 - 184s - loss: 0.0198 - acc: 0.9930 - val_loss: 0.0952 - val_acc: 0.9824
+2019-11-17 14:03:26.706203: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 258/500
+
+Epoch 00258: val_acc did not improve from 0.98738
+7187/7187 - 184s - loss: 0.0191 - acc: 0.9935 - val_loss: 0.1035 - val_acc: 0.9806
+2019-11-17 14:06:30.383294: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 259/500
+
+Epoch 00259: val_acc did not improve from 0.98738
+7187/7187 - 184s - loss: 0.0190 - acc: 0.9933 - val_loss: 0.1803 - val_acc: 0.9818
+2019-11-17 14:09:33.882663: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 260/500
+
+Epoch 00260: val_acc did not improve from 0.98738
+7187/7187 - 184s - loss: 0.0178 - acc: 0.9941 - val_loss: 0.2254 - val_acc: 0.9762
+2019-11-17 14:12:36.612113: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 261/500
+
+Epoch 00261: val_acc did not improve from 0.98738
+7187/7187 - 183s - loss: 0.0186 - acc: 0.9936 - val_loss: 0.2181 - val_acc: 0.9794
+2019-11-17 14:15:39.257410: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 262/500
+
+Epoch 00262: val_acc did not improve from 0.98738
+7187/7187 - 183s - loss: 0.0194 - acc: 0.9934 - val_loss: 0.0736 - val_acc: 0.9850
+2019-11-17 14:18:43.083484: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 263/500
+
+Epoch 00263: val_acc did not improve from 0.98738
+7187/7187 - 184s - loss: 0.0186 - acc: 0.9934 - val_loss: 0.0687 - val_acc: 0.9870
+2019-11-17 14:21:46.909108: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 264/500
+
+Epoch 00264: val_acc did not improve from 0.98738
+7187/7187 - 184s - loss: 0.0175 - acc: 0.9940 - val_loss: 0.0736 - val_acc: 0.9856
+2019-11-17 14:24:50.574851: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 265/500
+
+Epoch 00265: val_acc did not improve from 0.98738
+7187/7187 - 184s - loss: 0.0182 - acc: 0.9937 - val_loss: 0.0801 - val_acc: 0.9858
+2019-11-17 14:27:54.445989: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 266/500
+
+Epoch 00266: val_acc did not improve from 0.98738
+7187/7187 - 184s - loss: 0.0175 - acc: 0.9940 - val_loss: 0.0692 - val_acc: 0.9862
+2019-11-17 14:30:58.500591: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 267/500
+
+Epoch 00267: val_acc improved from 0.98738 to 0.98778, saving model to model.h5
+7187/7187 - 184s - loss: 0.0193 - acc: 0.9935 - val_loss: 0.0569 - val_acc: 0.9878
+2019-11-17 14:34:02.245512: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 268/500
+
+Epoch 00268: val_acc did not improve from 0.98778
+7187/7187 - 184s - loss: 0.0177 - acc: 0.9938 - val_loss: 0.0864 - val_acc: 0.9820
+2019-11-17 14:37:06.183272: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 269/500
+
+Epoch 00269: val_acc did not improve from 0.98778
+7187/7187 - 184s - loss: 0.0177 - acc: 0.9942 - val_loss: 0.0753 - val_acc: 0.9862
+2019-11-17 14:40:09.758500: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 270/500
+
+Epoch 00270: val_acc did not improve from 0.98778
+7187/7187 - 184s - loss: 0.0176 - acc: 0.9937 - val_loss: 0.0618 - val_acc: 0.9850
+2019-11-17 14:43:13.716063: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 271/500
+
+Epoch 00271: val_acc did not improve from 0.98778
+7187/7187 - 184s - loss: 0.0174 - acc: 0.9941 - val_loss: 0.0969 - val_acc: 0.9806
+2019-11-17 14:46:17.878164: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 272/500
+
+Epoch 00272: val_acc did not improve from 0.98778
+7187/7187 - 184s - loss: 0.0176 - acc: 0.9939 - val_loss: 0.0808 - val_acc: 0.9828
+2019-11-17 14:49:21.841424: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 273/500
+
+Epoch 00273: val_acc did not improve from 0.98778
+7187/7187 - 184s - loss: 0.0169 - acc: 0.9943 - val_loss: 0.0877 - val_acc: 0.9826
+2019-11-17 14:52:25.888970: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 274/500
+
+Epoch 00274: val_acc did not improve from 0.98778
+7187/7187 - 184s - loss: 0.0179 - acc: 0.9939 - val_loss: 0.0780 - val_acc: 0.9840
+2019-11-17 14:55:29.562545: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 275/500
+
+Epoch 00275: val_acc did not improve from 0.98778
+7187/7187 - 184s - loss: 0.0169 - acc: 0.9943 - val_loss: 0.1315 - val_acc: 0.9816
+2019-11-17 14:58:33.519875: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 276/500
+
+Epoch 00276: val_acc did not improve from 0.98778
+7187/7187 - 184s - loss: 0.0175 - acc: 0.9942 - val_loss: 0.0711 - val_acc: 0.9868
+2019-11-17 15:01:37.407715: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 277/500
+
+Epoch 00277: val_acc did not improve from 0.98778
+7187/7187 - 184s - loss: 0.0166 - acc: 0.9944 - val_loss: 0.1106 - val_acc: 0.9808
+2019-11-17 15:04:41.397843: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 278/500
+
+Epoch 00278: val_acc did not improve from 0.98778
+7187/7187 - 184s - loss: 0.0168 - acc: 0.9944 - val_loss: 0.0792 - val_acc: 0.9850
+2019-11-17 15:07:45.145259: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 279/500
+
+Epoch 00279: val_acc did not improve from 0.98778
+7187/7187 - 184s - loss: 0.0167 - acc: 0.9943 - val_loss: 0.0823 - val_acc: 0.9832
+2019-11-17 15:10:49.076804: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 280/500
+
+Epoch 00280: val_acc did not improve from 0.98778
+7187/7187 - 184s - loss: 0.0167 - acc: 0.9944 - val_loss: 0.0706 - val_acc: 0.9868
+2019-11-17 15:13:52.782136: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 281/500
+
+Epoch 00281: val_acc improved from 0.98778 to 0.98798, saving model to model.h5
+7187/7187 - 184s - loss: 0.0163 - acc: 0.9945 - val_loss: 0.0703 - val_acc: 0.9880
+2019-11-17 15:16:56.361928: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 282/500
+
+Epoch 00282: val_acc did not improve from 0.98798
+7187/7187 - 183s - loss: 0.0170 - acc: 0.9943 - val_loss: 0.0754 - val_acc: 0.9862
+2019-11-17 15:19:59.653254: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 283/500
+
+Epoch 00283: val_acc did not improve from 0.98798
+7187/7187 - 183s - loss: 0.0155 - acc: 0.9946 - val_loss: 0.0823 - val_acc: 0.9844
+2019-11-17 15:23:03.162624: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 284/500
+
+Epoch 00284: val_acc did not improve from 0.98798
+7187/7187 - 184s - loss: 0.0171 - acc: 0.9941 - val_loss: 0.0702 - val_acc: 0.9868
+2019-11-17 15:26:06.699068: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 285/500
+
+Epoch 00285: val_acc did not improve from 0.98798
+7187/7187 - 183s - loss: 0.0151 - acc: 0.9948 - val_loss: 0.0982 - val_acc: 0.9836
+2019-11-17 15:29:10.149852: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 286/500
+
+Epoch 00286: val_acc did not improve from 0.98798
+7187/7187 - 184s - loss: 0.0165 - acc: 0.9944 - val_loss: 0.0608 - val_acc: 0.9880
+2019-11-17 15:32:14.452723: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 287/500
+
+Epoch 00287: val_acc did not improve from 0.98798
+7187/7187 - 184s - loss: 0.0166 - acc: 0.9942 - val_loss: 0.0643 - val_acc: 0.9870
+2019-11-17 15:35:18.499828: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 288/500
+
+Epoch 00288: val_acc did not improve from 0.98798
+7187/7187 - 184s - loss: 0.0154 - acc: 0.9947 - val_loss: 0.1561 - val_acc: 0.9842
+2019-11-17 15:38:22.453921: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 289/500
+
+Epoch 00289: val_acc did not improve from 0.98798
+7187/7187 - 184s - loss: 0.0162 - acc: 0.9944 - val_loss: 0.0852 - val_acc: 0.9846
+2019-11-17 15:41:26.259077: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 290/500
+
+Epoch 00290: val_acc did not improve from 0.98798
+7187/7187 - 184s - loss: 0.0157 - acc: 0.9947 - val_loss: 0.0587 - val_acc: 0.9878
+2019-11-17 15:44:30.371631: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 291/500
+
+Epoch 00291: val_acc did not improve from 0.98798
+7187/7187 - 184s - loss: 0.0155 - acc: 0.9949 - val_loss: 0.0791 - val_acc: 0.9854
+2019-11-17 15:47:33.229519: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 292/500
+
+Epoch 00292: val_acc did not improve from 0.98798
+7187/7187 - 183s - loss: 0.0158 - acc: 0.9946 - val_loss: 0.0944 - val_acc: 0.9850
+2019-11-17 15:50:37.202881: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 293/500
+
+Epoch 00293: val_acc did not improve from 0.98798
+7187/7187 - 184s - loss: 0.0144 - acc: 0.9951 - val_loss: 0.0672 - val_acc: 0.9876
+2019-11-17 15:53:41.328223: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 294/500
+
+Epoch 00294: val_acc did not improve from 0.98798
+7187/7187 - 184s - loss: 0.0151 - acc: 0.9949 - val_loss: 0.0754 - val_acc: 0.9860
+2019-11-17 15:56:45.483885: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 295/500
+
+Epoch 00295: val_acc improved from 0.98798 to 0.98918, saving model to model.h5
+7187/7187 - 184s - loss: 0.0142 - acc: 0.9951 - val_loss: 0.0561 - val_acc: 0.9892
+2019-11-17 15:59:49.384159: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 296/500
+
+Epoch 00296: val_acc did not improve from 0.98918
+7187/7187 - 184s - loss: 0.0152 - acc: 0.9946 - val_loss: 0.0717 - val_acc: 0.9872
+2019-11-17 16:02:53.721568: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 297/500
+
+Epoch 00297: val_acc did not improve from 0.98918
+7187/7187 - 184s - loss: 0.0151 - acc: 0.9949 - val_loss: 0.0700 - val_acc: 0.9866
+2019-11-17 16:05:57.662962: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 298/500
+
+Epoch 00298: val_acc did not improve from 0.98918
+7187/7187 - 184s - loss: 0.0149 - acc: 0.9949 - val_loss: 0.0959 - val_acc: 0.9836
+2019-11-17 16:09:01.853559: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 299/500
+
+Epoch 00299: val_acc did not improve from 0.98918
+7187/7187 - 184s - loss: 0.0137 - acc: 0.9953 - val_loss: 0.0952 - val_acc: 0.9832
+2019-11-17 16:12:05.791737: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 300/500
+
+Epoch 00300: val_acc did not improve from 0.98918
+7187/7187 - 184s - loss: 0.0148 - acc: 0.9949 - val_loss: 0.0572 - val_acc: 0.9874
+2019-11-17 16:15:09.475927: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 301/500
+
+Epoch 00301: val_acc did not improve from 0.98918
+7187/7187 - 184s - loss: 0.0162 - acc: 0.9942 - val_loss: 0.0878 - val_acc: 0.9822
+2019-11-17 16:18:13.438146: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 302/500
+
+Epoch 00302: val_acc did not improve from 0.98918
+7187/7187 - 184s - loss: 0.0149 - acc: 0.9949 - val_loss: 0.0829 - val_acc: 0.9850
+2019-11-17 16:21:17.497022: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 303/500
+
+Epoch 00303: val_acc did not improve from 0.98918
+7187/7187 - 184s - loss: 0.0146 - acc: 0.9950 - val_loss: 0.0632 - val_acc: 0.9876
+2019-11-17 16:24:21.829658: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 304/500
+
+Epoch 00304: val_acc did not improve from 0.98918
+7187/7187 - 184s - loss: 0.0140 - acc: 0.9951 - val_loss: 0.0764 - val_acc: 0.9844
+2019-11-17 16:27:25.857387: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 305/500
+
+Epoch 00305: val_acc did not improve from 0.98918
+7187/7187 - 184s - loss: 0.0156 - acc: 0.9948 - val_loss: 0.0705 - val_acc: 0.9870
+2019-11-17 16:30:29.452095: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 306/500
+
+Epoch 00306: val_acc improved from 0.98918 to 0.99119, saving model to model.h5
+7187/7187 - 184s - loss: 0.0147 - acc: 0.9948 - val_loss: 0.0464 - val_acc: 0.9912
+2019-11-17 16:33:33.454590: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 307/500
+
+Epoch 00307: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0146 - acc: 0.9949 - val_loss: 0.0799 - val_acc: 0.9852
+2019-11-17 16:36:37.470421: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 308/500
+
+Epoch 00308: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0146 - acc: 0.9950 - val_loss: 0.0675 - val_acc: 0.9864
+2019-11-17 16:39:41.477492: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 309/500
+
+Epoch 00309: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0144 - acc: 0.9953 - val_loss: 0.0681 - val_acc: 0.9874
+2019-11-17 16:42:45.272166: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 310/500
+
+Epoch 00310: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0152 - acc: 0.9950 - val_loss: 0.0842 - val_acc: 0.9848
+2019-11-17 16:45:49.041763: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 311/500
+
+Epoch 00311: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0142 - acc: 0.9952 - val_loss: 0.0906 - val_acc: 0.9836
+2019-11-17 16:48:52.889845: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 312/500
+
+Epoch 00312: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0147 - acc: 0.9950 - val_loss: 0.0749 - val_acc: 0.9860
+2019-11-17 16:51:56.826935: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 313/500
+
+Epoch 00313: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0140 - acc: 0.9952 - val_loss: 0.1021 - val_acc: 0.9832
+2019-11-17 16:55:00.825309: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 314/500
+
+Epoch 00314: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0144 - acc: 0.9950 - val_loss: 0.0379 - val_acc: 0.9900
+2019-11-17 16:58:04.980958: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 315/500
+
+Epoch 00315: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0130 - acc: 0.9957 - val_loss: 0.0693 - val_acc: 0.9862
+2019-11-17 17:01:08.974247: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 316/500
+
+Epoch 00316: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0152 - acc: 0.9950 - val_loss: 0.0565 - val_acc: 0.9882
+2019-11-17 17:04:12.798395: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 317/500
+
+Epoch 00317: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0145 - acc: 0.9955 - val_loss: 0.0745 - val_acc: 0.9866
+2019-11-17 17:07:16.254095: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 318/500
+
+Epoch 00318: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0155 - acc: 0.9945 - val_loss: 0.0394 - val_acc: 0.9912
+2019-11-17 17:10:20.395156: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 319/500
+
+Epoch 00319: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0137 - acc: 0.9953 - val_loss: 0.0892 - val_acc: 0.9838
+2019-11-17 17:13:23.586996: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 320/500
+
+Epoch 00320: val_acc did not improve from 0.99119
+7187/7187 - 183s - loss: 0.0142 - acc: 0.9951 - val_loss: 0.0715 - val_acc: 0.9862
+2019-11-17 17:16:27.238717: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 321/500
+
+Epoch 00321: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0128 - acc: 0.9956 - val_loss: 0.1044 - val_acc: 0.9802
+2019-11-17 17:19:30.984262: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 322/500
+
+Epoch 00322: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0142 - acc: 0.9953 - val_loss: 0.0735 - val_acc: 0.9864
+2019-11-17 17:22:35.200612: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 323/500
+
+Epoch 00323: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0144 - acc: 0.9951 - val_loss: 0.1158 - val_acc: 0.9810
+2019-11-17 17:25:38.805172: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 324/500
+
+Epoch 00324: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0136 - acc: 0.9953 - val_loss: 0.0568 - val_acc: 0.9888
+2019-11-17 17:28:42.452834: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 325/500
+
+Epoch 00325: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0139 - acc: 0.9953 - val_loss: 0.1027 - val_acc: 0.9806
+2019-11-17 17:31:45.082897: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 326/500
+
+Epoch 00326: val_acc did not improve from 0.99119
+7187/7187 - 183s - loss: 0.0138 - acc: 0.9951 - val_loss: 0.0582 - val_acc: 0.9878
+2019-11-17 17:34:47.326261: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 327/500
+
+Epoch 00327: val_acc did not improve from 0.99119
+7187/7187 - 182s - loss: 0.0134 - acc: 0.9955 - val_loss: 0.0982 - val_acc: 0.9810
+2019-11-17 17:37:51.437387: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 328/500
+
+Epoch 00328: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0137 - acc: 0.9952 - val_loss: 0.0649 - val_acc: 0.9882
+2019-11-17 17:40:55.364128: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 329/500
+
+Epoch 00329: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0129 - acc: 0.9955 - val_loss: 0.0986 - val_acc: 0.9820
+2019-11-17 17:43:59.644153: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 330/500
+
+Epoch 00330: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0132 - acc: 0.9956 - val_loss: 0.0775 - val_acc: 0.9856
+2019-11-17 17:47:03.810950: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 331/500
+
+Epoch 00331: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0131 - acc: 0.9956 - val_loss: 0.0716 - val_acc: 0.9858
+2019-11-17 17:50:08.158167: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 332/500
+
+Epoch 00332: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0130 - acc: 0.9955 - val_loss: 0.0871 - val_acc: 0.9848
+2019-11-17 17:53:11.941730: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 333/500
+
+Epoch 00333: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0138 - acc: 0.9955 - val_loss: 0.0675 - val_acc: 0.9870
+2019-11-17 17:56:15.760808: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 334/500
+
+Epoch 00334: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0129 - acc: 0.9957 - val_loss: 0.0475 - val_acc: 0.9894
+2019-11-17 17:59:19.913201: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 335/500
+
+Epoch 00335: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0123 - acc: 0.9958 - val_loss: 0.1089 - val_acc: 0.9816
+2019-11-17 18:02:23.325865: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 336/500
+
+Epoch 00336: val_acc did not improve from 0.99119
+7187/7187 - 183s - loss: 0.0126 - acc: 0.9956 - val_loss: 0.0794 - val_acc: 0.9834
+2019-11-17 18:05:26.996015: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 337/500
+
+Epoch 00337: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0118 - acc: 0.9958 - val_loss: 0.0635 - val_acc: 0.9872
+2019-11-17 18:08:30.977548: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 338/500
+
+Epoch 00338: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0125 - acc: 0.9956 - val_loss: 0.0603 - val_acc: 0.9882
+2019-11-17 18:11:34.885583: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 339/500
+
+Epoch 00339: val_acc did not improve from 0.99119
+7187/7187 - 184s - loss: 0.0121 - acc: 0.9959 - val_loss: 0.0707 - val_acc: 0.9878
+2019-11-17 18:14:38.776654: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 340/500
+
+Epoch 00340: val_acc improved from 0.99119 to 0.99139, saving model to model.h5
+7187/7187 - 184s - loss: 0.0124 - acc: 0.9959 - val_loss: 0.0465 - val_acc: 0.9914
+2019-11-17 18:17:42.774402: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 341/500
+
+Epoch 00341: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0119 - acc: 0.9958 - val_loss: 0.0896 - val_acc: 0.9860
+2019-11-17 18:20:46.649092: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 342/500
+
+Epoch 00342: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0125 - acc: 0.9958 - val_loss: 0.0606 - val_acc: 0.9892
+2019-11-17 18:23:50.564973: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 343/500
+
+Epoch 00343: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0130 - acc: 0.9957 - val_loss: 0.0514 - val_acc: 0.9898
+2019-11-17 18:26:54.424747: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 344/500
+
+Epoch 00344: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0129 - acc: 0.9955 - val_loss: 0.0494 - val_acc: 0.9912
+2019-11-17 18:29:58.079657: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 345/500
+
+Epoch 00345: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0121 - acc: 0.9958 - val_loss: 0.0655 - val_acc: 0.9886
+2019-11-17 18:33:01.886437: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 346/500
+
+Epoch 00346: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0126 - acc: 0.9956 - val_loss: 0.0806 - val_acc: 0.9850
+2019-11-17 18:36:05.563363: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 347/500
+
+Epoch 00347: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0119 - acc: 0.9960 - val_loss: 0.0437 - val_acc: 0.9914
+2019-11-17 18:39:09.421313: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 348/500
+
+Epoch 00348: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0128 - acc: 0.9957 - val_loss: 0.0749 - val_acc: 0.9870
+2019-11-17 18:42:13.461422: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 349/500
+
+Epoch 00349: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0118 - acc: 0.9960 - val_loss: 0.0582 - val_acc: 0.9862
+2019-11-17 18:45:17.062942: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 350/500
+
+Epoch 00350: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0117 - acc: 0.9959 - val_loss: 0.0670 - val_acc: 0.9880
+2019-11-17 18:48:21.024802: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 351/500
+
+Epoch 00351: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0132 - acc: 0.9955 - val_loss: 0.0669 - val_acc: 0.9862
+2019-11-17 18:51:24.844747: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 352/500
+
+Epoch 00352: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0115 - acc: 0.9961 - val_loss: 0.0741 - val_acc: 0.9864
+2019-11-17 18:54:28.663920: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 353/500
+
+Epoch 00353: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0128 - acc: 0.9957 - val_loss: 0.0835 - val_acc: 0.9850
+2019-11-17 18:57:32.370044: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 354/500
+
+Epoch 00354: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0119 - acc: 0.9960 - val_loss: 0.0623 - val_acc: 0.9882
+2019-11-17 19:00:35.613291: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 355/500
+
+Epoch 00355: val_acc did not improve from 0.99139
+7187/7187 - 183s - loss: 0.0120 - acc: 0.9958 - val_loss: 0.0614 - val_acc: 0.9858
+2019-11-17 19:03:38.245850: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 356/500
+
+Epoch 00356: val_acc did not improve from 0.99139
+7187/7187 - 183s - loss: 0.0115 - acc: 0.9962 - val_loss: 0.0459 - val_acc: 0.9906
+2019-11-17 19:06:40.215204: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 357/500
+
+Epoch 00357: val_acc did not improve from 0.99139
+7187/7187 - 182s - loss: 0.0114 - acc: 0.9959 - val_loss: 0.0572 - val_acc: 0.9894
+2019-11-17 19:09:44.443391: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 358/500
+
+Epoch 00358: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0119 - acc: 0.9960 - val_loss: 0.0679 - val_acc: 0.9878
+2019-11-17 19:12:48.217699: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 359/500
+
+Epoch 00359: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0130 - acc: 0.9954 - val_loss: 0.0452 - val_acc: 0.9906
+2019-11-17 19:15:52.672163: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 360/500
+
+Epoch 00360: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0117 - acc: 0.9960 - val_loss: 0.0437 - val_acc: 0.9904
+2019-11-17 19:18:56.680978: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 361/500
+
+Epoch 00361: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0126 - acc: 0.9958 - val_loss: 0.0634 - val_acc: 0.9882
+2019-11-17 19:22:00.735785: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 362/500
+
+Epoch 00362: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0124 - acc: 0.9958 - val_loss: 0.0719 - val_acc: 0.9850
+2019-11-17 19:25:04.768376: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 363/500
+
+Epoch 00363: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0116 - acc: 0.9961 - val_loss: 0.0845 - val_acc: 0.9838
+2019-11-17 19:28:08.845175: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 364/500
+
+Epoch 00364: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0122 - acc: 0.9961 - val_loss: 0.1269 - val_acc: 0.9804
+2019-11-17 19:31:12.726707: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 365/500
+
+Epoch 00365: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0115 - acc: 0.9959 - val_loss: 0.0466 - val_acc: 0.9902
+2019-11-17 19:34:16.586570: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 366/500
+
+Epoch 00366: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0116 - acc: 0.9961 - val_loss: 0.0657 - val_acc: 0.9858
+2019-11-17 19:37:20.496498: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 367/500
+
+Epoch 00367: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0126 - acc: 0.9961 - val_loss: 0.0479 - val_acc: 0.9902
+2019-11-17 19:40:24.390528: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 368/500
+
+Epoch 00368: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0112 - acc: 0.9963 - val_loss: 0.0805 - val_acc: 0.9862
+2019-11-17 19:43:28.197489: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 369/500
+
+Epoch 00369: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0111 - acc: 0.9962 - val_loss: 0.0413 - val_acc: 0.9896
+2019-11-17 19:46:32.016488: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 370/500
+
+Epoch 00370: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0112 - acc: 0.9960 - val_loss: 0.0338 - val_acc: 0.9914
+2019-11-17 19:49:35.683322: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 371/500
+
+Epoch 00371: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0119 - acc: 0.9960 - val_loss: 0.0555 - val_acc: 0.9868
+2019-11-17 19:52:39.651329: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 372/500
+
+Epoch 00372: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0115 - acc: 0.9961 - val_loss: 0.0671 - val_acc: 0.9864
+2019-11-17 19:55:43.866967: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 373/500
+
+Epoch 00373: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0114 - acc: 0.9962 - val_loss: 0.0476 - val_acc: 0.9908
+2019-11-17 19:58:47.903566: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 374/500
+
+Epoch 00374: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0124 - acc: 0.9957 - val_loss: 0.0444 - val_acc: 0.9902
+2019-11-17 20:01:51.967333: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 375/500
+
+Epoch 00375: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0105 - acc: 0.9966 - val_loss: 0.0504 - val_acc: 0.9878
+2019-11-17 20:04:55.951133: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 376/500
+
+Epoch 00376: val_acc did not improve from 0.99139
+7187/7187 - 184s - loss: 0.0110 - acc: 0.9962 - val_loss: 0.0879 - val_acc: 0.9848
+2019-11-17 20:08:00.019159: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 377/500
+
+Epoch 00377: val_acc improved from 0.99139 to 0.99219, saving model to model.h5
+7187/7187 - 184s - loss: 0.0105 - acc: 0.9964 - val_loss: 0.0480 - val_acc: 0.9922
+2019-11-17 20:11:04.299730: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 378/500
+
+Epoch 00378: val_acc did not improve from 0.99219
+7187/7187 - 184s - loss: 0.0111 - acc: 0.9964 - val_loss: 0.0613 - val_acc: 0.9890
+2019-11-17 20:14:08.409134: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 379/500
+
+Epoch 00379: val_acc did not improve from 0.99219
+7187/7187 - 184s - loss: 0.0110 - acc: 0.9963 - val_loss: 0.0574 - val_acc: 0.9900
+2019-11-17 20:17:12.697531: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 380/500
+
+Epoch 00380: val_acc did not improve from 0.99219
+7187/7187 - 184s - loss: 0.0108 - acc: 0.9962 - val_loss: 0.0786 - val_acc: 0.9862
+2019-11-17 20:20:17.279620: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 381/500
+
+Epoch 00381: val_acc did not improve from 0.99219
+7187/7187 - 185s - loss: 0.0114 - acc: 0.9960 - val_loss: 0.0443 - val_acc: 0.9904
+2019-11-17 20:23:20.881230: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 382/500
+
+Epoch 00382: val_acc did not improve from 0.99219
+7187/7187 - 184s - loss: 0.0121 - acc: 0.9959 - val_loss: 0.0421 - val_acc: 0.9896
+2019-11-17 20:26:25.296331: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 383/500
+
+Epoch 00383: val_acc did not improve from 0.99219
+7187/7187 - 184s - loss: 0.0116 - acc: 0.9961 - val_loss: 0.0673 - val_acc: 0.9892
+2019-11-17 20:29:29.497601: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 384/500
+
+Epoch 00384: val_acc did not improve from 0.99219
+7187/7187 - 184s - loss: 0.0116 - acc: 0.9961 - val_loss: 0.0486 - val_acc: 0.9894
+2019-11-17 20:32:33.498497: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 385/500
+
+Epoch 00385: val_acc did not improve from 0.99219
+7187/7187 - 184s - loss: 0.0115 - acc: 0.9960 - val_loss: 0.0526 - val_acc: 0.9916
+2019-11-17 20:35:37.432600: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 386/500
+
+Epoch 00386: val_acc did not improve from 0.99219
+7187/7187 - 184s - loss: 0.0118 - acc: 0.9959 - val_loss: 0.0506 - val_acc: 0.9904
+2019-11-17 20:38:40.824345: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 387/500
+
+Epoch 00387: val_acc did not improve from 0.99219
+7187/7187 - 183s - loss: 0.0117 - acc: 0.9960 - val_loss: 0.0940 - val_acc: 0.9820
+2019-11-17 20:41:43.984995: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 388/500
+
+Epoch 00388: val_acc improved from 0.99219 to 0.99239, saving model to model.h5
+7187/7187 - 183s - loss: 0.0108 - acc: 0.9963 - val_loss: 0.0355 - val_acc: 0.9924
+2019-11-17 20:44:47.568592: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 389/500
+
+Epoch 00389: val_acc did not improve from 0.99239
+7187/7187 - 183s - loss: 0.0102 - acc: 0.9966 - val_loss: 0.0503 - val_acc: 0.9900
+2019-11-17 20:47:51.130630: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 390/500
+
+Epoch 00390: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0120 - acc: 0.9959 - val_loss: 0.0613 - val_acc: 0.9884
+2019-11-17 20:50:55.001484: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 391/500
+
+Epoch 00391: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0114 - acc: 0.9962 - val_loss: 0.0423 - val_acc: 0.9908
+2019-11-17 20:53:59.037061: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 392/500
+
+Epoch 00392: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0110 - acc: 0.9965 - val_loss: 0.0728 - val_acc: 0.9870
+2019-11-17 20:57:03.130003: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 393/500
+
+Epoch 00393: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0106 - acc: 0.9964 - val_loss: 0.0677 - val_acc: 0.9878
+2019-11-17 21:00:07.040983: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 394/500
+
+Epoch 00394: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0112 - acc: 0.9960 - val_loss: 0.0680 - val_acc: 0.9866
+2019-11-17 21:03:11.017707: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 395/500
+
+Epoch 00395: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0109 - acc: 0.9963 - val_loss: 0.0358 - val_acc: 0.9906
+2019-11-17 21:06:15.281611: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 396/500
+
+Epoch 00396: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0101 - acc: 0.9965 - val_loss: 0.0529 - val_acc: 0.9894
+2019-11-17 21:09:19.236792: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 397/500
+
+Epoch 00397: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0105 - acc: 0.9964 - val_loss: 0.0484 - val_acc: 0.9910
+2019-11-17 21:12:23.271252: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 398/500
+
+Epoch 00398: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0108 - acc: 0.9962 - val_loss: 0.0718 - val_acc: 0.9868
+2019-11-17 21:15:27.116927: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 399/500
+
+Epoch 00399: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0108 - acc: 0.9965 - val_loss: 0.0703 - val_acc: 0.9874
+2019-11-17 21:18:31.480987: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 400/500
+
+Epoch 00400: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0105 - acc: 0.9964 - val_loss: 0.0582 - val_acc: 0.9880
+2019-11-17 21:21:35.566583: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 401/500
+
+Epoch 00401: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0111 - acc: 0.9960 - val_loss: 0.0599 - val_acc: 0.9896
+2019-11-17 21:24:39.661451: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 402/500
+
+Epoch 00402: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0104 - acc: 0.9965 - val_loss: 0.0547 - val_acc: 0.9890
+2019-11-17 21:27:44.099226: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 403/500
+
+Epoch 00403: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0119 - acc: 0.9961 - val_loss: 0.0726 - val_acc: 0.9880
+2019-11-17 21:30:48.648110: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 404/500
+
+Epoch 00404: val_acc did not improve from 0.99239
+7187/7187 - 185s - loss: 0.0104 - acc: 0.9965 - val_loss: 0.0771 - val_acc: 0.9870
+2019-11-17 21:33:52.833633: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 405/500
+
+Epoch 00405: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0105 - acc: 0.9964 - val_loss: 0.0614 - val_acc: 0.9888
+2019-11-17 21:36:57.200456: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 406/500
+
+Epoch 00406: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0103 - acc: 0.9965 - val_loss: 0.0641 - val_acc: 0.9886
+2019-11-17 21:40:01.550951: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 407/500
+
+Epoch 00407: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0103 - acc: 0.9966 - val_loss: 0.0796 - val_acc: 0.9866
+2019-11-17 21:43:05.786270: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 408/500
+
+Epoch 00408: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0101 - acc: 0.9966 - val_loss: 0.0428 - val_acc: 0.9908
+2019-11-17 21:46:10.115869: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 409/500
+
+Epoch 00409: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0113 - acc: 0.9961 - val_loss: 0.0466 - val_acc: 0.9906
+2019-11-17 21:49:14.443226: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 410/500
+
+Epoch 00410: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0105 - acc: 0.9966 - val_loss: 0.0594 - val_acc: 0.9884
+2019-11-17 21:52:19.034724: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 411/500
+
+Epoch 00411: val_acc did not improve from 0.99239
+7187/7187 - 185s - loss: 0.0104 - acc: 0.9964 - val_loss: 0.0643 - val_acc: 0.9888
+2019-11-17 21:55:23.064154: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 412/500
+
+Epoch 00412: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0111 - acc: 0.9963 - val_loss: 0.0695 - val_acc: 0.9874
+2019-11-17 21:58:26.590078: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 413/500
+
+Epoch 00413: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0096 - acc: 0.9967 - val_loss: 0.0599 - val_acc: 0.9884
+2019-11-17 22:01:30.482378: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 414/500
+
+Epoch 00414: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0105 - acc: 0.9964 - val_loss: 0.0799 - val_acc: 0.9872
+2019-11-17 22:04:34.609397: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 415/500
+
+Epoch 00415: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0120 - acc: 0.9959 - val_loss: 0.0915 - val_acc: 0.9844
+2019-11-17 22:07:38.853935: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 416/500
+
+Epoch 00416: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0100 - acc: 0.9967 - val_loss: 0.0491 - val_acc: 0.9906
+2019-11-17 22:10:42.769658: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 417/500
+
+Epoch 00417: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0108 - acc: 0.9963 - val_loss: 0.0539 - val_acc: 0.9896
+2019-11-17 22:13:46.357131: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 418/500
+
+Epoch 00418: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0112 - acc: 0.9965 - val_loss: 0.0748 - val_acc: 0.9850
+2019-11-17 22:16:49.977409: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 419/500
+
+Epoch 00419: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0103 - acc: 0.9964 - val_loss: 0.0547 - val_acc: 0.9894
+2019-11-17 22:19:53.459061: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 420/500
+
+Epoch 00420: val_acc did not improve from 0.99239
+7187/7187 - 183s - loss: 0.0101 - acc: 0.9966 - val_loss: 0.0708 - val_acc: 0.9848
+2019-11-17 22:22:55.921299: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 421/500
+
+Epoch 00421: val_acc did not improve from 0.99239
+7187/7187 - 182s - loss: 0.0103 - acc: 0.9965 - val_loss: 0.0562 - val_acc: 0.9892
+2019-11-17 22:25:59.460546: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 422/500
+
+Epoch 00422: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0097 - acc: 0.9966 - val_loss: 0.0548 - val_acc: 0.9898
+2019-11-17 22:29:02.914948: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 423/500
+
+Epoch 00423: val_acc did not improve from 0.99239
+7187/7187 - 183s - loss: 0.0094 - acc: 0.9966 - val_loss: 0.0909 - val_acc: 0.9854
+2019-11-17 22:32:06.613407: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 424/500
+
+Epoch 00424: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0094 - acc: 0.9968 - val_loss: 0.0487 - val_acc: 0.9904
+2019-11-17 22:35:10.570057: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 425/500
+
+Epoch 00425: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0095 - acc: 0.9969 - val_loss: 0.0686 - val_acc: 0.9890
+2019-11-17 22:38:14.272801: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 426/500
+
+Epoch 00426: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0097 - acc: 0.9966 - val_loss: 0.0616 - val_acc: 0.9892
+2019-11-17 22:41:18.158119: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 427/500
+
+Epoch 00427: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0099 - acc: 0.9968 - val_loss: 0.0862 - val_acc: 0.9880
+2019-11-17 22:44:22.165336: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 428/500
+
+Epoch 00428: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0105 - acc: 0.9967 - val_loss: 0.0893 - val_acc: 0.9868
+2019-11-17 22:47:25.976829: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 429/500
+
+Epoch 00429: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0103 - acc: 0.9965 - val_loss: 0.0702 - val_acc: 0.9874
+2019-11-17 22:50:29.940757: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 430/500
+
+Epoch 00430: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0102 - acc: 0.9965 - val_loss: 0.0943 - val_acc: 0.9850
+2019-11-17 22:53:33.930530: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 431/500
+
+Epoch 00431: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0101 - acc: 0.9967 - val_loss: 0.0567 - val_acc: 0.9902
+2019-11-17 22:56:37.673687: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 432/500
+
+Epoch 00432: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0103 - acc: 0.9965 - val_loss: 0.0583 - val_acc: 0.9892
+2019-11-17 22:59:41.597861: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 433/500
+
+Epoch 00433: val_acc did not improve from 0.99239
+7187/7187 - 184s - loss: 0.0094 - acc: 0.9969 - val_loss: 0.0527 - val_acc: 0.9902
+2019-11-17 23:02:45.181839: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 434/500
+
+Epoch 00434: val_acc improved from 0.99239 to 0.99279, saving model to model.h5
+7187/7187 - 184s - loss: 0.0089 - acc: 0.9971 - val_loss: 0.0338 - val_acc: 0.9928
+2019-11-17 23:05:48.635391: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 435/500
+
+Epoch 00435: val_acc did not improve from 0.99279
+7187/7187 - 183s - loss: 0.0102 - acc: 0.9966 - val_loss: 0.0570 - val_acc: 0.9892
+2019-11-17 23:08:52.528947: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 436/500
+
+Epoch 00436: val_acc did not improve from 0.99279
+7187/7187 - 184s - loss: 0.0093 - acc: 0.9967 - val_loss: 0.0560 - val_acc: 0.9908
+2019-11-17 23:11:56.521860: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 437/500
+
+Epoch 00437: val_acc did not improve from 0.99279
+7187/7187 - 184s - loss: 0.0096 - acc: 0.9967 - val_loss: 0.0837 - val_acc: 0.9858
+2019-11-17 23:15:00.426266: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 438/500
+
+Epoch 00438: val_acc did not improve from 0.99279
+7187/7187 - 184s - loss: 0.0102 - acc: 0.9965 - val_loss: 0.0436 - val_acc: 0.9928
+2019-11-17 23:18:04.578687: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 439/500
+
+Epoch 00439: val_acc did not improve from 0.99279
+7187/7187 - 184s - loss: 0.0099 - acc: 0.9966 - val_loss: 0.0565 - val_acc: 0.9878
+2019-11-17 23:21:08.698973: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 440/500
+
+Epoch 00440: val_acc did not improve from 0.99279
+7187/7187 - 184s - loss: 0.0093 - acc: 0.9969 - val_loss: 0.0520 - val_acc: 0.9894
+2019-11-17 23:24:12.956182: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 441/500
+
+Epoch 00441: val_acc did not improve from 0.99279
+7187/7187 - 184s - loss: 0.0091 - acc: 0.9967 - val_loss: 0.0761 - val_acc: 0.9884
+2019-11-17 23:27:17.098419: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 442/500
+
+Epoch 00442: val_acc did not improve from 0.99279
+7187/7187 - 184s - loss: 0.0093 - acc: 0.9969 - val_loss: 0.0474 - val_acc: 0.9906
+2019-11-17 23:30:20.891428: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 443/500
+
+Epoch 00443: val_acc did not improve from 0.99279
+7187/7187 - 184s - loss: 0.0107 - acc: 0.9965 - val_loss: 0.0481 - val_acc: 0.9914
+2019-11-17 23:33:24.976356: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 444/500
+
+Epoch 00444: val_acc did not improve from 0.99279
+7187/7187 - 184s - loss: 0.0084 - acc: 0.9971 - val_loss: 0.0532 - val_acc: 0.9902
+2019-11-17 23:36:29.103983: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 445/500
+
+Epoch 00445: val_acc did not improve from 0.99279
+7187/7187 - 184s - loss: 0.0093 - acc: 0.9967 - val_loss: 0.0629 - val_acc: 0.9888
+2019-11-17 23:39:32.552403: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 446/500
+
+Epoch 00446: val_acc improved from 0.99279 to 0.99439, saving model to model.h5
+7187/7187 - 183s - loss: 0.0089 - acc: 0.9969 - val_loss: 0.0250 - val_acc: 0.9944
+2019-11-17 23:42:35.305843: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 447/500
+
+Epoch 00447: val_acc did not improve from 0.99439
+7187/7187 - 183s - loss: 0.0096 - acc: 0.9967 - val_loss: 0.0388 - val_acc: 0.9926
+2019-11-17 23:45:37.082333: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 448/500
+
+Epoch 00448: val_acc did not improve from 0.99439
+7187/7187 - 182s - loss: 0.0094 - acc: 0.9969 - val_loss: 0.0575 - val_acc: 0.9894
+2019-11-17 23:48:40.981033: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 449/500
+
+Epoch 00449: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0086 - acc: 0.9971 - val_loss: 0.0542 - val_acc: 0.9908
+2019-11-17 23:51:44.591039: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 450/500
+
+Epoch 00450: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0085 - acc: 0.9973 - val_loss: 0.0408 - val_acc: 0.9910
+2019-11-17 23:54:48.338167: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 451/500
+
+Epoch 00451: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0100 - acc: 0.9965 - val_loss: 0.0726 - val_acc: 0.9874
+2019-11-17 23:57:51.966038: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 452/500
+
+Epoch 00452: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0092 - acc: 0.9969 - val_loss: 0.0293 - val_acc: 0.9926
+2019-11-18 00:00:55.935630: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 453/500
+
+Epoch 00453: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0094 - acc: 0.9967 - val_loss: 0.0469 - val_acc: 0.9912
+2019-11-18 00:04:00.031885: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 454/500
+
+Epoch 00454: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0096 - acc: 0.9967 - val_loss: 0.0545 - val_acc: 0.9900
+2019-11-18 00:07:03.876802: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 455/500
+
+Epoch 00455: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0102 - acc: 0.9966 - val_loss: 0.0747 - val_acc: 0.9882
+2019-11-18 00:10:07.256819: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 456/500
+
+Epoch 00456: val_acc did not improve from 0.99439
+7187/7187 - 183s - loss: 0.0089 - acc: 0.9969 - val_loss: 0.0393 - val_acc: 0.9924
+2019-11-18 00:13:10.802160: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 457/500
+
+Epoch 00457: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0093 - acc: 0.9967 - val_loss: 0.0407 - val_acc: 0.9918
+2019-11-18 00:16:14.868962: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 458/500
+
+Epoch 00458: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0096 - acc: 0.9966 - val_loss: 0.0540 - val_acc: 0.9902
+2019-11-18 00:19:19.169617: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 459/500
+
+Epoch 00459: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0104 - acc: 0.9967 - val_loss: 0.0435 - val_acc: 0.9908
+2019-11-18 00:22:23.469163: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 460/500
+
+Epoch 00460: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0086 - acc: 0.9970 - val_loss: 0.0491 - val_acc: 0.9898
+2019-11-18 00:25:27.604777: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 461/500
+
+Epoch 00461: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0095 - acc: 0.9968 - val_loss: 0.0715 - val_acc: 0.9886
+2019-11-18 00:28:31.872459: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 462/500
+
+Epoch 00462: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0104 - acc: 0.9969 - val_loss: 0.0660 - val_acc: 0.9886
+2019-11-18 00:31:35.805917: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 463/500
+
+Epoch 00463: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0095 - acc: 0.9970 - val_loss: 0.0702 - val_acc: 0.9874
+2019-11-18 00:34:40.275231: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 464/500
+
+Epoch 00464: val_acc did not improve from 0.99439
+7187/7187 - 185s - loss: 0.0096 - acc: 0.9968 - val_loss: 0.0408 - val_acc: 0.9922
+2019-11-18 00:37:44.652646: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 465/500
+
+Epoch 00465: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0093 - acc: 0.9968 - val_loss: 0.0636 - val_acc: 0.9894
+2019-11-18 00:40:48.370324: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 466/500
+
+Epoch 00466: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0098 - acc: 0.9966 - val_loss: 0.0475 - val_acc: 0.9906
+2019-11-18 00:43:51.539772: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 467/500
+
+Epoch 00467: val_acc did not improve from 0.99439
+7187/7187 - 183s - loss: 0.0101 - acc: 0.9966 - val_loss: 0.0599 - val_acc: 0.9882
+2019-11-18 00:46:55.522963: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 468/500
+
+Epoch 00468: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0095 - acc: 0.9967 - val_loss: 0.0663 - val_acc: 0.9888
+2019-11-18 00:49:59.536757: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 469/500
+
+Epoch 00469: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0101 - acc: 0.9965 - val_loss: 0.0401 - val_acc: 0.9922
+2019-11-18 00:53:03.519296: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 470/500
+
+Epoch 00470: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0082 - acc: 0.9972 - val_loss: 0.0601 - val_acc: 0.9898
+2019-11-18 00:56:07.356976: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 471/500
+
+Epoch 00471: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0089 - acc: 0.9969 - val_loss: 0.0422 - val_acc: 0.9916
+2019-11-18 00:59:11.520213: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 472/500
+
+Epoch 00472: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0081 - acc: 0.9972 - val_loss: 0.0542 - val_acc: 0.9896
+2019-11-18 01:02:15.204007: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 473/500
+
+Epoch 00473: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0090 - acc: 0.9970 - val_loss: 0.0493 - val_acc: 0.9892
+2019-11-18 01:05:18.813578: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 474/500
+
+Epoch 00474: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0091 - acc: 0.9968 - val_loss: 0.0355 - val_acc: 0.9900
+2019-11-18 01:08:21.963971: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 475/500
+
+Epoch 00475: val_acc did not improve from 0.99439
+7187/7187 - 183s - loss: 0.0097 - acc: 0.9967 - val_loss: 0.0515 - val_acc: 0.9918
+2019-11-18 01:11:25.353466: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 476/500
+
+Epoch 00476: val_acc did not improve from 0.99439
+7187/7187 - 183s - loss: 0.0094 - acc: 0.9970 - val_loss: 0.0628 - val_acc: 0.9902
+2019-11-18 01:14:29.152633: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 477/500
+
+Epoch 00477: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0095 - acc: 0.9968 - val_loss: 0.0547 - val_acc: 0.9904
+2019-11-18 01:17:32.872344: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 478/500
+
+Epoch 00478: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0094 - acc: 0.9968 - val_loss: 0.0744 - val_acc: 0.9886
+2019-11-18 01:20:36.661656: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 479/500
+
+Epoch 00479: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0084 - acc: 0.9971 - val_loss: 0.0591 - val_acc: 0.9896
+2019-11-18 01:23:40.581983: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 480/500
+
+Epoch 00480: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0085 - acc: 0.9971 - val_loss: 0.0668 - val_acc: 0.9878
+2019-11-18 01:26:45.069597: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 481/500
+
+Epoch 00481: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0094 - acc: 0.9970 - val_loss: 0.0432 - val_acc: 0.9922
+2019-11-18 01:29:48.723470: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 482/500
+
+Epoch 00482: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0089 - acc: 0.9968 - val_loss: 0.0694 - val_acc: 0.9884
+2019-11-18 01:32:52.576322: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 483/500
+
+Epoch 00483: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0090 - acc: 0.9969 - val_loss: 0.0464 - val_acc: 0.9912
+2019-11-18 01:35:56.579168: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 484/500
+
+Epoch 00484: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0089 - acc: 0.9969 - val_loss: 0.0700 - val_acc: 0.9884
+2019-11-18 01:39:00.507046: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 485/500
+
+Epoch 00485: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0086 - acc: 0.9971 - val_loss: 0.0402 - val_acc: 0.9926
+2019-11-18 01:42:04.294891: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 486/500
+
+Epoch 00486: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0095 - acc: 0.9966 - val_loss: 0.0472 - val_acc: 0.9914
+2019-11-18 01:45:08.233115: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 487/500
+
+Epoch 00487: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0093 - acc: 0.9969 - val_loss: 0.0778 - val_acc: 0.9874
+2019-11-18 01:48:12.238721: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 488/500
+
+Epoch 00488: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0090 - acc: 0.9970 - val_loss: 0.0550 - val_acc: 0.9902
+2019-11-18 01:51:16.017092: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 489/500
+
+Epoch 00489: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0086 - acc: 0.9970 - val_loss: 0.0444 - val_acc: 0.9910
+2019-11-18 01:54:19.129872: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 490/500
+
+Epoch 00490: val_acc did not improve from 0.99439
+7187/7187 - 183s - loss: 0.0077 - acc: 0.9974 - val_loss: 0.0316 - val_acc: 0.9934
+2019-11-18 01:57:23.186549: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 491/500
+
+Epoch 00491: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0081 - acc: 0.9973 - val_loss: 0.0492 - val_acc: 0.9906
+2019-11-18 02:00:27.054005: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 492/500
+
+Epoch 00492: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0087 - acc: 0.9969 - val_loss: 0.0598 - val_acc: 0.9888
+2019-11-18 02:03:31.156674: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 493/500
+
+Epoch 00493: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0089 - acc: 0.9968 - val_loss: 0.0470 - val_acc: 0.9912
+2019-11-18 02:06:35.251394: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 494/500
+
+Epoch 00494: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0090 - acc: 0.9971 - val_loss: 0.0623 - val_acc: 0.9906
+2019-11-18 02:09:39.154279: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 495/500
+
+Epoch 00495: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0089 - acc: 0.9970 - val_loss: 0.0427 - val_acc: 0.9914
+2019-11-18 02:12:43.092750: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 496/500
+
+Epoch 00496: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0088 - acc: 0.9970 - val_loss: 0.0531 - val_acc: 0.9912
+2019-11-18 02:15:47.011619: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 497/500
+
+Epoch 00497: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0087 - acc: 0.9972 - val_loss: 0.0479 - val_acc: 0.9916
+2019-11-18 02:18:51.156276: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 498/500
+
+Epoch 00498: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0090 - acc: 0.9968 - val_loss: 0.0527 - val_acc: 0.9910
+2019-11-18 02:21:55.069872: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 499/500
+
+Epoch 00499: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0083 - acc: 0.9970 - val_loss: 0.0463 - val_acc: 0.9912
+2019-11-18 02:24:58.952431: W ./tensorflow/core/framework/model.h:213] Encountered a stop event that was not preceded by a start event.
+Epoch 500/500
+
+Epoch 00500: val_acc did not improve from 0.99439
+7187/7187 - 184s - loss: 0.0088 - acc: 0.9971 - val_loss: 0.0616 - val_acc: 0.9886
+{'loss': [1.472853940916904, 1.3988669134901415, 1.3933047297535974, 1.3912106046461672, 1.389357162828951, 1.388316373193448, 1.387687467626426, 1.387432890756415, 1.3871045303357996, 1.3866330397482358, 1.3862925864433702, 1.3863407389517535, 1.3861037890835135, 1.3857134042370713, 1.3853619976768212, 1.3853907987871406, 1.3853208175102925, 1.3853835484174424, 1.3849987068444312, 1.384736681890136, 1.3846621184118835, 1.3843004880005219, 1.3843905844143705, 1.3842666729843067, 1.3840421343506568, 1.3837775679677622, 1.3837983471736535, 1.3833765473371755, 1.3832457002718326, 1.3829531975643052, 1.3824990348522663, 1.382367628861721, 1.3823560149874992, 1.3820934909531548, 1.381730148452901, 1.3813896024112693, 1.381105232242087, 1.3809750704269705, 1.381192094513052, 1.3809168752782017, 1.380619200609217, 1.3803887269220583, 1.3805255325112238, 1.379976885846548, 1.3801841908840107, 1.3795755614454133, 1.3794751640684468, 1.3793085840392945, 1.3789910907056677, 1.3792148594466804, 1.3787797212733401, 1.3787588768481744, 1.3788314487334665, 1.3782383283952422, 1.378122760404611, 1.3781420611466058, 1.37798301362852, 1.3775645522824478, 1.3772470885728354, 1.3778426291233676, 1.3770538727232324, 1.3776155861657768, 1.376894017478032, 1.3766860748442022, 1.3768600752742794, 1.3765687687897592, 1.3770042814099774, 1.3768354620640941, 1.3763434362457942, 1.3763862727529999, 1.3765184347530357, 1.376773697686026, 1.3761708960009662, 1.3753339317589024, 1.3755339389386754, 1.3756344100937021, 1.3754312903854202, 1.374949550469429, 1.375406082687946, 1.3745997334548359, 1.375061938589167, 1.3748350921021526, 1.3743109592098313, 1.374355808424986, 1.3740371260006736, 1.3741281117818378, 1.3740031844603928, 1.3737293587816397, 1.3739651627014455, 1.3741181208590763, 1.372908631153327, 1.372802799561101, 1.3732203274687458, 1.3729535178214631, 1.3728628856541634, 1.3724590777289276, 1.3734813615943056, 1.3725907602710918, 1.373152606441163, 1.3728177268464956, 1.3719879114131892, 1.3725000244529153, 1.3720798868786, 1.37158926624374, 1.3714606515120875, 1.37132422166357, 1.3707994548737363, 1.37098534430319, 1.3696480590709645, 1.3669211124866285, 1.2853317786958232, 1.0494351449887875, 0.9419581313134566, 0.8778920797391414, 0.8443249295844941, 0.8126776881139667, 0.7990089658239844, 0.7106446748949546, 0.5650066213613096, 0.38956670479360966, 0.2347825147603933, 0.1862728437837729, 0.15512681138122883, 0.1390426021026655, 0.13039623717102297, 0.11800487072640363, 0.10620273759327357, 0.11004344055481453, 0.10145023275535806, 0.09612988517511142, 0.09202102591339244, 0.08775818210837168, 0.08362342204236711, 0.08057365393779657, 0.0801425383760528, 0.07331835097411615, 0.06857708178148009, 0.06857721807993793, 0.06565799202785351, 0.06315146716571407, 0.058511871936458036, 0.058900610644081704, 0.05632649884457272, 0.05733986956816575, 0.05579835527081583, 0.054616872068775496, 0.05370068694009819, 0.05089329654360377, 0.050774594959733195, 0.04755026577318289, 0.04809816643880623, 0.04816420653546889, 0.04438882152815435, 0.04524127128510036, 0.043449661951447976, 0.04562643222247479, 0.04391075787829921, 0.04193368257510838, 0.04208418297863419, 0.040606749600900424, 0.040379658563229316, 0.03974059962827533, 0.03972871234030556, 0.038595234110231226, 0.037189684708949115, 0.03796429182568546, 0.037127147204438875, 0.03732078104487259, 0.03723233114134277, 0.0364973267711352, 0.034695551069841415, 0.03527809978261463, 0.034289804432386224, 0.034625531576796466, 0.03559902363362177, 0.03362650122004617, 0.03316986272278486, 0.03366881158480252, 0.031785664696685006, 0.03258328558940713, 0.03249150962364037, 0.03375111855738773, 0.0314148643642017, 0.031201221920017768, 0.03050079129199894, 0.030117703809198024, 0.02911330775201371, 0.03067327390566638, 0.029131626408726494, 0.029291759104163668, 0.03097201102231165, 0.029949687605826225, 0.03021952478275549, 0.026642798356010078, 0.027067878384518112, 0.02696633681217351, 0.028875914865893637, 0.028567004479948616, 0.027648962050713717, 0.028000186389976076, 0.027598710739548726, 0.026151292990475323, 0.02684736780406439, 0.02787702935785231, 0.02814322006516454, 0.02612777215885179, 0.02769886266469548, 0.025707637046760747, 0.025711478977673008, 0.025205157554847202, 0.024424422814176, 0.02698378534387138, 0.024676458161996654, 0.02590358835136035, 0.024741989227320602, 0.026010084893705286, 0.02454444056580373, 0.023390867651295087, 0.023613121467398995, 0.024487685641664755, 0.02378895772859635, 0.024864973229615027, 0.023848542536724127, 0.022910164295159945, 0.023937690333562828, 0.02219041051739642, 0.021956987599109856, 0.02172567382695197, 0.02320950933212688, 0.022084138449432515, 0.02289562343118898, 0.02257944144885694, 0.022839857874390912, 0.020965905375962074, 0.023284697453572655, 0.021643279710208334, 0.021573762473313007, 0.020593689018299603, 0.020816362757044623, 0.020812199776781306, 0.020981813547488938, 0.021779614043180795, 0.021240967200960154, 0.01978523645834093, 0.021648364102872592, 0.019969269240661874, 0.02091359978265993, 0.01918133374391376, 0.02218754203286342, 0.019127164260318835, 0.020350543433807964, 0.019352362035091084, 0.019734866173779186, 0.018782918009499286, 0.018807304702550157, 0.018537710617277228, 0.01979467708023862, 0.019095768774762628, 0.019009294383272507, 0.017828951227316082, 0.018603243378057646, 0.019356275085229295, 0.018590712869133337, 0.017483057930726922, 0.018239537075586842, 0.017463490166305558, 0.01930429684948711, 0.01768690234436628, 0.017665152961787486, 0.017592922970078834, 0.017361611848687564, 0.017555252466983785, 0.01686285498721326, 0.017900051855865403, 0.016892277302322012, 0.017477834344773235, 0.016622028615395797, 0.016773426963151764, 0.016736477106994576, 0.016654675531325453, 0.016308656875276672, 0.017002751274687776, 0.015512342599775634, 0.01707788777038014, 0.01507456352683818, 0.01649722270178399, 0.01657036727514219, 0.01538671418017686, 0.016238394210422533, 0.01568142945370988, 0.015496351330329458, 0.01584288642663203, 0.014378318419811659, 0.015123731624954805, 0.014208523654036957, 0.015237185353095237, 0.015140402855747118, 0.01489257351889977, 0.013679208724145917, 0.014775467524914725, 0.016237507529771936, 0.014888652246574156, 0.01457159447961508, 0.014010888275056681, 0.015563356651993425, 0.014673553499683092, 0.014574459407213539, 0.014576346334194603, 0.01443027687143221, 0.015210093349244534, 0.014233111988377541, 0.014668192396161978, 0.013966605439128976, 0.01438557462304775, 0.013019916160499263, 0.015246228560306638, 0.014491042469716744, 0.015513284849603336, 0.013719913700500866, 0.01419161784237376, 0.012834482694345027, 0.014187911232543017, 0.014407230004446544, 0.013589961840780327, 0.013889326377925412, 0.01375259722050408, 0.013405424125468371, 0.013699423241377717, 0.012945724158564336, 0.013195776816859043, 0.013086111967067892, 0.013026986542408612, 0.013800033138419966, 0.01290256622657936, 0.012308633511434961, 0.01261371137290636, 0.011842816576928775, 0.012453060497138185, 0.012080370985081402, 0.01239964661537919, 0.011891255747382234, 0.012473270583274161, 0.013033094829185209, 0.012887573623731568, 0.012120277159771113, 0.012611581188559986, 0.011925265815950065, 0.012805169853054273, 0.01181172137395696, 0.011679918744087824, 0.01321735863205804, 0.01149281589706438, 0.012837465133987928, 0.011948294881465574, 0.012024971997159165, 0.011470833767041104, 0.011436981675106863, 0.011889741283369205, 0.012986848530592416, 0.011677006124662777, 0.012575613426899645, 0.012377994196517228, 0.011594446603999083, 0.012190862584862775, 0.011530412913700697, 0.011611843486276403, 0.012608488035186797, 0.011177621782760744, 0.011142681324420985, 0.011244842347212044, 0.01192249277940203, 0.011507195891281626, 0.01142598798426761, 0.012396694477665508, 0.010505465427406236, 0.011000980652053034, 0.010516221055289217, 0.011065349416445491, 0.011019853997839323, 0.010763566035179417, 0.011381233251300188, 0.012050438868956006, 0.01162743582427913, 0.011576579667680371, 0.011468146429858788, 0.011831747119091445, 0.011696785895385886, 0.010844159178022587, 0.010210899089495469, 0.011958206726189797, 0.01136354585564823, 0.010994707730188718, 0.010613120640968886, 0.011172983825740881, 0.010933434694422615, 0.01010502424524648, 0.010525335845067284, 0.010838668158624956, 0.01076150174178319, 0.010524516369904856, 0.01111985330840936, 0.010446861802492078, 0.011892654961488017, 0.010403765658160287, 0.010497688916698434, 0.010348487643584238, 0.01027860390704964, 0.010125449133653174, 0.011255179190740284, 0.010493855618961658, 0.010448845175275218, 0.011128542366698687, 0.009579505785320843, 0.010467504032296638, 0.011966315010311215, 0.010028924815361688, 0.010829142708302946, 0.011237022197031363, 0.010340530890897771, 0.010065131612236034, 0.010326991918233433, 0.009679358969879934, 0.009426024062340424, 0.009441703880823403, 0.009532384362154596, 0.00973426780126522, 0.009881585059763446, 0.01053091573636748, 0.010312618821013796, 0.010166854924103876, 0.010132096643125798, 0.010293208097415038, 0.009363940083221322, 0.008905128813893026, 0.010155356146191903, 0.009307948691330269, 0.0095887585865091, 0.010242486622177867, 0.009923958785882356, 0.009265065118290835, 0.009136575928265955, 0.009276361594598954, 0.01073746805740331, 0.008445618564612971, 0.009296201009235866, 0.008918636887302225, 0.009593443325292585, 0.009449293189997307, 0.008551792722347924, 0.00845361752638842, 0.010005198485810574, 0.009242058438300971, 0.009394105416780079, 0.009639543418440776, 0.010249593497222, 0.008876157972695076, 0.009318515550608036, 0.009570718901022688, 0.01041331412786077, 0.008647876204478782, 0.009487931660659199, 0.010435613440604553, 0.009531152897359818, 0.009622734382066915, 0.00925446408409991, 0.009843251842111557, 0.010140934824537757, 0.009477184860095203, 0.010069264062661619, 0.008245773224267984, 0.008915909827566836, 0.008103820070693346, 0.009009264673401067, 0.009070050650607632, 0.009660679629321071, 0.009374551659993747, 0.009457734417780365, 0.00941810694998525, 0.008448246748676683, 0.008479602346270132, 0.009438127165266123, 0.008932092186624982, 0.00896310181195214, 0.008887913937871155, 0.008565726492560155, 0.009530851095309356, 0.009324456621131152, 0.008952797075409274, 0.008609734823677407, 0.007736866335306372, 0.008081882181238864, 0.008731835475549775, 0.008888583515855638, 0.00901601727037844, 0.008917310772507273, 0.008752846379528544, 0.008701600284826335, 0.009046229040935237, 0.008300105320785412, 0.008765378997872652], 'acc': [0.25304368, 0.2548525, 0.25351328, 0.25277412, 0.25366983, 0.25461772, 0.2579397, 0.25687003, 0.25721788, 0.25940934, 0.26035723, 0.2597137, 0.25994852, 0.26131383, 0.26274002, 0.2630009, 0.26170516, 0.26287916, 0.2627748, 0.26225302, 0.2650445, 0.2648793, 0.26514888, 0.26314875, 0.26582718, 0.267636, 0.26725337, 0.26875782, 0.26856652, 0.2701753, 0.2716015, 0.27223632, 0.27395818, 0.2727494, 0.27261028, 0.27523655, 0.275567, 0.2743582, 0.2753235, 0.27457562, 0.2762366, 0.27374077, 0.27534088, 0.2759931, 0.27621922, 0.27622792, 0.27730626, 0.2795151, 0.27869764, 0.27851504, 0.28014123, 0.279002, 0.27935857, 0.2804891, 0.27908897, 0.2801586, 0.28162828, 0.2818457, 0.28340232, 0.2811587, 0.28200224, 0.28202832, 0.2829675, 0.28268924, 0.28375018, 0.28332406, 0.28029776, 0.28093258, 0.28288925, 0.28338492, 0.28335884, 0.28441978, 0.2841937, 0.28684604, 0.28495026, 0.28510678, 0.28513288, 0.28524593, 0.28591555, 0.28584597, 0.2855503, 0.28682864, 0.2865069, 0.28610685, 0.28674167, 0.2869939, 0.28912446, 0.28900272, 0.2846111, 0.2865069, 0.28854182, 0.28742868, 0.2910985, 0.28917664, 0.28937665, 0.29057673, 0.28869835, 0.28937665, 0.28848964, 0.29025498, 0.29244643, 0.28868094, 0.29171595, 0.2915942, 0.29149854, 0.29169855, 0.29268992, 0.2941248, 0.2952988, 0.29870772, 0.35140705, 0.4330562, 0.45967546, 0.48143348, 0.49852163, 0.52192324, 0.5450727, 0.6217476, 0.7163629, 0.84825903, 0.91832477, 0.9356129, 0.9459441, 0.9518401, 0.9545708, 0.9590841, 0.96383226, 0.96175385, 0.9642758, 0.9666064, 0.96833694, 0.9688674, 0.9707371, 0.9717024, 0.9719633, 0.97451127, 0.97625923, 0.97640705, 0.97694623, 0.9781637, 0.9798595, 0.9794942, 0.98032904, 0.98034644, 0.98110306, 0.98099, 0.9808595, 0.9825553, 0.9823292, 0.9835728, 0.98313797, 0.983338, 0.98479027, 0.9845294, 0.9847033, 0.984025, 0.9849555, 0.9855381, 0.98568594, 0.9857903, 0.98596424, 0.98625994, 0.9865556, 0.9868947, 0.9867034, 0.98707736, 0.9868513, 0.987547, 0.9875296, 0.9874687, 0.9881557, 0.9878339, 0.98828614, 0.98802525, 0.9874687, 0.9881557, 0.98894703, 0.98847747, 0.9891036, 0.9885557, 0.9887731, 0.98856443, 0.98939925, 0.98943406, 0.9893558, 0.9895123, 0.98982537, 0.9894775, 0.99010366, 0.98979926, 0.98944277, 0.989721, 0.9893036, 0.9907211, 0.9908428, 0.9904515, 0.98994714, 0.9901993, 0.990408, 0.99035585, 0.9903037, 0.99091244, 0.99077326, 0.9902515, 0.9905819, 0.9909646, 0.99008626, 0.99100804, 0.99106026, 0.99146026, 0.9913907, 0.99063414, 0.99128634, 0.9909298, 0.9916516, 0.9912081, 0.99134725, 0.9918342, 0.991869, 0.9916255, 0.9919038, 0.9911472, 0.9916603, 0.992069, 0.9916516, 0.99242556, 0.99239945, 0.99272126, 0.9921125, 0.99240816, 0.9919299, 0.99228644, 0.9921125, 0.9928604, 0.9918951, 0.99264294, 0.99253863, 0.99281687, 0.9927473, 0.9932517, 0.9927908, 0.9925647, 0.9929908, 0.99312127, 0.9925647, 0.9932082, 0.9928604, 0.9935213, 0.9926082, 0.9931387, 0.993043, 0.9932517, 0.9931995, 0.99359953, 0.99362564, 0.9935387, 0.9930343, 0.9934691, 0.9933213, 0.9941039, 0.9935648, 0.993443, 0.9934256, 0.9939996, 0.9937387, 0.99403435, 0.9934691, 0.99378216, 0.9942431, 0.99373, 0.9941039, 0.9938778, 0.99430394, 0.9939387, 0.99431264, 0.9941561, 0.9944083, 0.9943909, 0.99434745, 0.9943735, 0.99446917, 0.9942518, 0.99458224, 0.9941126, 0.99476486, 0.9943822, 0.9942431, 0.9946953, 0.9943996, 0.99472135, 0.9949301, 0.99456483, 0.99513876, 0.994904, 0.9950605, 0.9946431, 0.99486053, 0.994904, 0.9953475, 0.9948866, 0.9942431, 0.9949388, 0.99504316, 0.9950605, 0.99477357, 0.9948257, 0.9949388, 0.99496484, 0.9953388, 0.99497354, 0.995191, 0.99503446, 0.9952257, 0.99497354, 0.9957475, 0.99499965, 0.99546057, 0.9945474, 0.9953475, 0.99514747, 0.9955736, 0.99525183, 0.9950518, 0.99527794, 0.99525183, 0.9950779, 0.99545187, 0.9951823, 0.9955127, 0.9956432, 0.99556494, 0.99554753, 0.995504, 0.99567795, 0.9957649, 0.99556494, 0.995791, 0.995591, 0.99592143, 0.9958519, 0.9958432, 0.9957736, 0.99568665, 0.99554753, 0.9957736, 0.995591, 0.99595624, 0.99568665, 0.99598235, 0.9958693, 0.99554753, 0.99612147, 0.99570405, 0.9960171, 0.99583447, 0.9961823, 0.99593014, 0.99597365, 0.99541706, 0.9959997, 0.99582577, 0.9957997, 0.99611276, 0.99609536, 0.9959041, 0.99612147, 0.9960519, 0.9963128, 0.996165, 0.9960432, 0.9960345, 0.99609536, 0.996191, 0.99568665, 0.9965563, 0.996165, 0.99641716, 0.99642587, 0.99625194, 0.99621713, 0.99595624, 0.99594754, 0.99608666, 0.9961476, 0.9959997, 0.99592143, 0.99598235, 0.9962693, 0.9965824, 0.9958693, 0.9961997, 0.9965041, 0.99635625, 0.9960258, 0.996278, 0.9965302, 0.99637365, 0.99621713, 0.9965302, 0.99639106, 0.99599105, 0.9964693, 0.9960519, 0.996478, 0.99642587, 0.9964693, 0.9965563, 0.99659973, 0.99610406, 0.996565, 0.99640846, 0.9962606, 0.99665195, 0.9964345, 0.995878, 0.9966954, 0.9963389, 0.9965389, 0.99637365, 0.9965737, 0.9965041, 0.99660844, 0.99664325, 0.99679977, 0.99689543, 0.99662584, 0.99679106, 0.9966867, 0.9964606, 0.996478, 0.9967476, 0.9965302, 0.99692154, 0.99710417, 0.99660844, 0.9967041, 0.99667805, 0.99651283, 0.99659973, 0.99690413, 0.99665195, 0.996852, 0.9964693, 0.9971476, 0.9967215, 0.99689543, 0.9966867, 0.996852, 0.9971389, 0.9972694, 0.9965041, 0.9969476, 0.9967476, 0.99666065, 0.99663454, 0.99689543, 0.9967389, 0.99664325, 0.99666935, 0.996965, 0.9968346, 0.9969476, 0.99703455, 0.99678236, 0.9967563, 0.9965911, 0.9965737, 0.9966954, 0.9964867, 0.9972172, 0.99693894, 0.9972346, 0.9969824, 0.99679106, 0.9967476, 0.996965, 0.9968172, 0.99678236, 0.99710417, 0.9971389, 0.996965, 0.9968172, 0.9969476, 0.9969476, 0.99706936, 0.9965824, 0.99689543, 0.9969563, 0.9970172, 0.99736506, 0.997252, 0.9969476, 0.9968346, 0.99710417, 0.9970259, 0.9969563, 0.997165, 0.99679106, 0.9970259, 0.99707806], 'val_loss': [1.4197979382215402, 1.3985843440661063, 1.393645955201907, 1.3907696864543817, 1.3930580486089756, 1.3892361227518473, 1.3880369705267441, 1.3872513220860407, 1.3871668707101772, 1.3864903079393582, 1.3870803507474752, 1.385773058121021, 1.3856224436790516, 1.3846546166982405, 1.3842322058402574, 1.3836826193027008, 1.3839883261766188, 1.3848552570129051, 1.3848361609837947, 1.3845039224013305, 1.3832762921467805, 1.383956172909492, 1.3836458237507405, 1.382817288621878, 1.3835934396737661, 1.382878730312372, 1.3829477991049106, 1.3829403936098783, 1.38206563049402, 1.3826424647600224, 1.3826252814286795, 1.3817849308252335, 1.380744294096262, 1.3812827406785426, 1.3822490951189628, 1.3801565254345918, 1.3808572708796232, 1.3801350375780692, 1.3815401211763039, 1.379938807625037, 1.3801802733005621, 1.3800930900451465, 1.3800950879469895, 1.3785733649363885, 1.3786777766087117, 1.3788533000609813, 1.378547735321216, 1.3772222571648085, 1.3777900288502376, 1.377860386020098, 1.379402178602341, 1.3788040326191828, 1.3784596908550997, 1.3765058807837658, 1.3769387958141475, 1.3793044678675823, 1.377949167902653, 1.3774857822901163, 1.3757353100257042, 1.3764454565751247, 1.3777781335207133, 1.3772568030235095, 1.3768062538061387, 1.3745963856195793, 1.376457052353101, 1.376025943037791, 1.3732871627196288, 1.3754653445421121, 1.3758668792553437, 1.3751539786656697, 1.3773573197615452, 1.3738010961275835, 1.373761609196663, 1.3728924622902503, 1.372577931254338, 1.3745997720039809, 1.3741552997858097, 1.3728658385001695, 1.372850939249381, 1.3739383896956077, 1.373915290985352, 1.3719613254070282, 1.3745008561855707, 1.3726580078021073, 1.37228978291536, 1.3724525345441623, 1.3742036758325038, 1.371321787054722, 1.3710835568415813, 1.3719988132898624, 1.3724059149240837, 1.3714339148539763, 1.3708533193820562, 1.3713746475867736, 1.3703587276813312, 1.371199334661166, 1.3716837156277437, 1.372014888968223, 1.372961197143946, 1.3720035136510165, 1.373395582422232, 1.368771377664346, 1.3715123606797976, 1.3686507523824007, 1.3705970996465437, 1.3692162128595204, 1.3676697806670115, 1.3696300914654365, 1.3653252999751995, 1.3626074691613514, 1.2839044756614244, 1.1242107550303142, 1.2217377834977248, 1.2548507474935973, 1.0338890300347254, 1.072581980090875, 1.2653687775899203, 0.6727410726822339, 0.5201425847048179, 0.5197797069588724, 0.34246714557341945, 0.2781605212643253, 0.15460656761364916, 0.18311129477548932, 0.14401240327816384, 0.15365833728962267, 0.09850016374921558, 0.15289213754350875, 0.12881568135885457, 0.2635177195593431, 0.13022248281226778, 0.11675263358908221, 0.1648677286744388, 0.16591425734679013, 0.158152963764923, 0.15664243995150592, 0.15308651230549378, 0.1438302025445666, 0.0901166625982837, 0.15351221883520338, 0.13911647707781855, 0.09652805007877199, 0.09650020146916806, 0.14567126296018473, 0.1070366125952135, 0.13445782757611807, 0.14553189863689417, 0.11054613706283607, 0.1233502308669603, 0.10277450222531279, 0.1117595017245572, 0.11683863778217493, 0.06879608445976479, 0.11923404853228721, 0.09765513040084291, 0.14724094866320078, 0.13789658480419428, 0.1208123010059213, 0.0845101991681295, 0.0988763153233998, 0.13391711082073096, 0.1159653710899143, 0.0920847810845876, 0.15047918815687994, 0.07933920756317711, 0.08093503376097307, 0.06562897147526679, 0.09711811702792462, 0.09342084525349911, 0.12039254819041954, 0.13440296418211917, 0.12865283677783096, 0.15848876723989982, 0.10537746132028576, 0.10207792011842597, 0.11271890125443954, 0.13228197736582503, 0.12886071559057363, 0.10280697945762977, 0.09010642091434654, 0.1192239566150408, 0.11326031766887978, 0.10802564186685715, 0.0791166055498313, 0.07633926891113035, 0.1024660863639902, 0.12802442424295946, 0.11864622151435793, 0.11297461515386996, 0.10092418084322911, 0.11260204077630093, 0.1290235944901759, 0.09214519913172271, 0.11179091895784501, 0.06977447471702956, 0.1022094889705173, 0.1096939656717644, 0.1161618038607854, 0.11191727275464904, 0.1333242641755867, 0.11386079571807037, 0.08853326106101451, 0.08063655995837775, 0.11648849725726251, 0.08421246688032642, 0.07253238566989403, 0.07306551977721398, 0.07989555433022133, 0.07775734566734936, 0.0870547386925485, 0.07712509865363106, 0.07865617684949819, 0.12202076800358642, 0.10578963587066681, 0.0835533411542822, 0.14425659468746124, 0.08263505188986496, 0.06534857039874072, 0.12832802106410887, 0.09170587906750938, 0.09110773658074013, 0.07840358538778411, 0.1264876077523109, 0.07621418702507189, 0.11673957250359862, 0.12171682084306795, 0.09297849232529333, 0.090703295963776, 0.06026365780279373, 0.11379530753551428, 0.08068345724470195, 0.10748082484713542, 0.10584873691754691, 0.0869460226698983, 0.06309389166748137, 0.07401572195578683, 0.09958519352586848, 0.09476003874182226, 0.07222435297205575, 0.1165054120419244, 0.08867849884955731, 0.07132516511679017, 0.10674741121972996, 0.08534992218294454, 0.09864896930933134, 0.10769150842185418, 0.06577022078484927, 0.06995199205387738, 0.08201349944567714, 0.18083330609795795, 0.05519257883507505, 0.08586877243963897, 0.08360839653176523, 0.080095419705073, 0.07328206368149218, 0.09610973465912327, 0.09517000297475565, 0.10354496333436203, 0.1802585067668219, 0.22535363397646244, 0.21805529858272182, 0.0736424411143209, 0.06865503928541414, 0.07357743608093195, 0.08006739528819505, 0.06916555811920762, 0.05688573378551153, 0.08636395163180584, 0.07530900140142048, 0.0617551300447868, 0.09691338637392806, 0.0808040385554384, 0.08765337103316248, 0.07799080904099316, 0.13153950893634386, 0.07110659744826564, 0.11061100133922053, 0.07916618469281353, 0.08230878742401196, 0.07059932880200748, 0.07034804786969809, 0.0753971991250987, 0.0823158900274817, 0.07015939510502624, 0.09818198568143707, 0.06083182391349067, 0.06429941936989482, 0.15608997070025382, 0.08515343356828946, 0.058722445534773834, 0.07914018972138666, 0.09441831753713359, 0.06721070608655785, 0.07537893968086944, 0.05609538183290834, 0.071722870881027, 0.07001176308680211, 0.09586281291454632, 0.0952484457823891, 0.05723549755061842, 0.08782484514429675, 0.08291898780256246, 0.06318085386857356, 0.07642980440219069, 0.07051308930505175, 0.046350047163418125, 0.07985217256608206, 0.06752838026881783, 0.06812991478325259, 0.08423723856498228, 0.09063072502299555, 0.07490355900784369, 0.10212850245370457, 0.03787301489545699, 0.06926953176532344, 0.05650390624779716, 0.07450072537125625, 0.03939303030961638, 0.08924498851033291, 0.07154076989241631, 0.10438126587406953, 0.07350995709351538, 0.11581854981113719, 0.056807641295689125, 0.1026868076384665, 0.058231101644499114, 0.0982074466263014, 0.06494990902676953, 0.09858513541697078, 0.07754559208631644, 0.071588361574363, 0.08708440496587563, 0.06746081958473049, 0.04754188787298238, 0.10887654972992077, 0.07939515067664, 0.06352727521865777, 0.060272122267327005, 0.07070871022474434, 0.046531724655282894, 0.08963045677381501, 0.06059035990712967, 0.05139076279200202, 0.04938294708735596, 0.0654778680928704, 0.08059822846195375, 0.043701954092522664, 0.07488628247092567, 0.0581569055060177, 0.06701546963391208, 0.06688741554781476, 0.07413734262484777, 0.08350576113332846, 0.0622664354835365, 0.0614350686329858, 0.04593592227160132, 0.05721425472752319, 0.06792052390144566, 0.045212301360298315, 0.043738499394302396, 0.06343993615268755, 0.07191086071068935, 0.08446677987980686, 0.12691547045914447, 0.04655663763170755, 0.06572718585091995, 0.047948670846964594, 0.08050270403588514, 0.041280865198238446, 0.03383730032788243, 0.05552636116540309, 0.06708460062064311, 0.04758816947899078, 0.04442035436523079, 0.05043425668123852, 0.0878938271623073, 0.0480488347031951, 0.06125666739735946, 0.05735641099559411, 0.07861639281451115, 0.044288066202245804, 0.042069052122772704, 0.06733813316166704, 0.04857631526717977, 0.052611514047429524, 0.05058838486972023, 0.09403693708746803, 0.035465684156529294, 0.050344675708918304, 0.06133548681603001, 0.042254797759546645, 0.07282245391304251, 0.06766487611680433, 0.06796860558565754, 0.03580518219404365, 0.05291892054869261, 0.04835152309164861, 0.07179606396632857, 0.07030357174518616, 0.058204487778122635, 0.05992667084648008, 0.05472723920035805, 0.07257921661900905, 0.07705708215316971, 0.06139230235625476, 0.06405248718049733, 0.07964961354558397, 0.042783225329069974, 0.0465596659803862, 0.05941488171568189, 0.06434121666747235, 0.0694605835000434, 0.05993645251578336, 0.07994189665101487, 0.0914560866138351, 0.04905694452057046, 0.05389245451705504, 0.07477506055163875, 0.05467903958474615, 0.07076488502197201, 0.05621556277390829, 0.05482659450987535, 0.09085774924865338, 0.04874747005737827, 0.06864230448565668, 0.06162780357082212, 0.08623261829747264, 0.08925521031880407, 0.07017567376009418, 0.09432567713612573, 0.05669531449267828, 0.058344690031958635, 0.05269617421264081, 0.03382323215095358, 0.056977363083500696, 0.05598755295869568, 0.08368227656668598, 0.04356960656995959, 0.056530041507192264, 0.0519516243434815, 0.07613809303711186, 0.047358407652991326, 0.04814928729385579, 0.053209861064136735, 0.06288414333917758, 0.02501822103226112, 0.03880824773996239, 0.057472642633968556, 0.054175889421658484, 0.04083820481662333, 0.07259842445432141, 0.029337330427458744, 0.04686860392586567, 0.0544508867322584, 0.0746819204672049, 0.03925060831540788, 0.040697818344683175, 0.05396295265280698, 0.043522267536088996, 0.04912290766970346, 0.07150214606914027, 0.06603840113195367, 0.0701915926938533, 0.04082081950432253, 0.06359563801563639, 0.04751396166439566, 0.059940729624105855, 0.06629329237331423, 0.04010321434877357, 0.06005449371103161, 0.04219526371685024, 0.05423180607487975, 0.049339680480052, 0.035473909277505766, 0.05145293845139102, 0.0628417171433829, 0.05465154650628165, 0.07438732857853161, 0.05911060893075961, 0.06683278574231853, 0.043181408206313776, 0.06940940802604156, 0.046412362846430036, 0.06997164641658013, 0.040206517444034286, 0.04718925819949877, 0.0778258339441346, 0.05504112347064481, 0.04443900323583987, 0.031638460907515494, 0.04920553381911219, 0.05981205821666736, 0.04700182450654795, 0.06225537329050267, 0.04272834691148484, 0.0530754161991068, 0.04791978056663801, 0.05266741774806136, 0.04628259918973134, 0.06157973589121505], 'val_acc': [0.2558093, 0.24819711, 0.2596154, 0.25420672, 0.2570112, 0.25721154, 0.26342148, 0.2628205, 0.2558093, 0.26442307, 0.2570112, 0.25641027, 0.26201922, 0.2636218, 0.2638221, 0.26883012, 0.26262018, 0.26682693, 0.2586138, 0.26822916, 0.27463943, 0.27363783, 0.26322114, 0.26021636, 0.27664262, 0.276242, 0.26702723, 0.2664263, 0.27463943, 0.27103364, 0.27584136, 0.27283654, 0.27784455, 0.27684295, 0.27363783, 0.27984777, 0.27744392, 0.27764422, 0.2744391, 0.28485578, 0.27964744, 0.27884614, 0.27483973, 0.28345352, 0.2742388, 0.27463943, 0.28866187, 0.28545672, 0.2752404, 0.2792468, 0.28425482, 0.2802484, 0.28145033, 0.27884614, 0.28786057, 0.27664262, 0.2744391, 0.28866187, 0.2840545, 0.28645834, 0.27864584, 0.29026443, 0.2910657, 0.29126602, 0.2820513, 0.28565705, 0.28665864, 0.29046473, 0.2900641, 0.286258, 0.286258, 0.28886217, 0.2880609, 0.29567307, 0.28866187, 0.28786057, 0.29146636, 0.29747596, 0.29046473, 0.2908654, 0.2882612, 0.2948718, 0.2958734, 0.28966346, 0.29146636, 0.2950721, 0.29286858, 0.2880609, 0.296875, 0.29026443, 0.2900641, 0.29547277, 0.29306892, 0.2958734, 0.29346955, 0.28846154, 0.2900641, 0.29567307, 0.29286858, 0.29447114, 0.29146636, 0.30328527, 0.29727563, 0.29947916, 0.29727563, 0.30108172, 0.30148238, 0.30228364, 0.30248398, 0.31229967, 0.35276443, 0.40865386, 0.40004006, 0.44591346, 0.47976762, 0.473758, 0.46854967, 0.6608574, 0.76602566, 0.8313301, 0.88822114, 0.9192708, 0.94591343, 0.94871795, 0.9577324, 0.95372593, 0.9655449, 0.9609375, 0.96374196, 0.93810093, 0.96634614, 0.96935093, 0.958734, 0.95953524, 0.96153843, 0.9647436, 0.96634614, 0.9647436, 0.9749599, 0.96334136, 0.96854967, 0.97475964, 0.97616184, 0.96935093, 0.974359, 0.9709535, 0.9675481, 0.9735577, 0.9725561, 0.97716343, 0.97415864, 0.9725561, 0.984375, 0.97475964, 0.97836536, 0.9665465, 0.9729567, 0.97696316, 0.9781651, 0.978766, 0.9717548, 0.97716343, 0.9791667, 0.9717548, 0.9821715, 0.9807692, 0.9855769, 0.9797676, 0.97936696, 0.97475964, 0.974359, 0.97616184, 0.96895033, 0.9765625, 0.97896636, 0.974359, 0.97115386, 0.9739583, 0.9797676, 0.9805689, 0.97516024, 0.97896636, 0.97796476, 0.9833734, 0.98417467, 0.9803686, 0.97215545, 0.97896636, 0.97636217, 0.9801683, 0.97716343, 0.9729567, 0.9817708, 0.9797676, 0.9853766, 0.9785657, 0.9801683, 0.9775641, 0.978766, 0.97736377, 0.9791667, 0.98257214, 0.98297274, 0.97896636, 0.98257214, 0.9817708, 0.9827724, 0.9831731, 0.9823718, 0.98157054, 0.98357373, 0.9831731, 0.9765625, 0.97896636, 0.98297274, 0.97596157, 0.9811699, 0.98617786, 0.9765625, 0.9827724, 0.9833734, 0.9821715, 0.97636217, 0.98417467, 0.9791667, 0.978766, 0.9821715, 0.98157054, 0.9863782, 0.97936696, 0.98417467, 0.9801683, 0.97936696, 0.98297274, 0.9869792, 0.98477566, 0.98157054, 0.9817708, 0.98477566, 0.98157054, 0.9823718, 0.98477566, 0.98197114, 0.9827724, 0.9805689, 0.9803686, 0.98617786, 0.98677886, 0.984375, 0.9813702, 0.9873798, 0.984375, 0.98297274, 0.98377407, 0.9859776, 0.98157054, 0.9823718, 0.9805689, 0.9817708, 0.97616184, 0.97936696, 0.98497593, 0.9869792, 0.9855769, 0.98577726, 0.98617786, 0.98778045, 0.98197114, 0.98617786, 0.98497593, 0.9805689, 0.9827724, 0.98257214, 0.98397434, 0.98157054, 0.98677886, 0.9807692, 0.98497593, 0.9831731, 0.98677886, 0.9879808, 0.98617786, 0.984375, 0.98677886, 0.98357373, 0.9879808, 0.9869792, 0.98417467, 0.98457533, 0.98778045, 0.9853766, 0.98497593, 0.9875801, 0.9859776, 0.9891827, 0.98717946, 0.9865785, 0.98357373, 0.9831731, 0.9873798, 0.9821715, 0.98497593, 0.9875801, 0.984375, 0.9869792, 0.9911859, 0.98517627, 0.9863782, 0.9873798, 0.98477566, 0.98357373, 0.9859776, 0.9831731, 0.989984, 0.98617786, 0.9881811, 0.9865785, 0.9911859, 0.98377407, 0.98617786, 0.9801683, 0.9863782, 0.98096955, 0.98878205, 0.9805689, 0.98778045, 0.98096955, 0.9881811, 0.98197114, 0.9855769, 0.98577726, 0.98477566, 0.9869792, 0.98938304, 0.98157054, 0.9833734, 0.98717946, 0.9881811, 0.98778045, 0.99138623, 0.9859776, 0.9891827, 0.98978364, 0.9911859, 0.9885817, 0.98497593, 0.99138623, 0.9869792, 0.98617786, 0.9879808, 0.98617786, 0.9863782, 0.98497593, 0.9881811, 0.98577726, 0.9905849, 0.98938304, 0.98778045, 0.9905849, 0.99038464, 0.9881811, 0.98497593, 0.98377407, 0.9803686, 0.9901843, 0.98577726, 0.9901843, 0.98617786, 0.9895833, 0.99138623, 0.98677886, 0.9863782, 0.99078524, 0.9901843, 0.98778045, 0.98477566, 0.9921875, 0.9889824, 0.989984, 0.98617786, 0.99038464, 0.9895833, 0.9891827, 0.98938304, 0.99158657, 0.99038464, 0.98197114, 0.99238783, 0.989984, 0.9883814, 0.99078524, 0.9869792, 0.98778045, 0.9865785, 0.9905849, 0.98938304, 0.9909856, 0.98677886, 0.9873798, 0.9879808, 0.9895833, 0.9889824, 0.9879808, 0.9869792, 0.98878205, 0.9885817, 0.9865785, 0.99078524, 0.9905849, 0.9883814, 0.98878205, 0.9873798, 0.9883814, 0.98717946, 0.984375, 0.9905849, 0.9895833, 0.98497593, 0.98938304, 0.98477566, 0.9891827, 0.98978364, 0.9853766, 0.99038464, 0.9889824, 0.9891827, 0.9879808, 0.98677886, 0.9873798, 0.98497593, 0.9901843, 0.9891827, 0.9901843, 0.99278843, 0.9891827, 0.99078524, 0.98577726, 0.99278843, 0.98778045, 0.98938304, 0.9883814, 0.9905849, 0.99138623, 0.9901843, 0.98878205, 0.994391, 0.99258816, 0.98938304, 0.99078524, 0.9909856, 0.9873798, 0.99258816, 0.9911859, 0.989984, 0.9881811, 0.99238783, 0.99178684, 0.9901843, 0.99078524, 0.98978364, 0.9885817, 0.9885817, 0.9873798, 0.9921875, 0.98938304, 0.9905849, 0.9881811, 0.98878205, 0.9921875, 0.98978364, 0.99158657, 0.9895833, 0.9891827, 0.989984, 0.99178684, 0.9901843, 0.99038464, 0.9885817, 0.9895833, 0.98778045, 0.9921875, 0.9883814, 0.9911859, 0.9883814, 0.99258816, 0.99138623, 0.9873798, 0.9901843, 0.9909856, 0.9933894, 0.9905849, 0.98878205, 0.9911859, 0.9905849, 0.99138623, 0.9911859, 0.99158657, 0.9909856, 0.9911859, 0.9885817]}

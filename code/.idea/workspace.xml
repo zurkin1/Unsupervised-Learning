@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1ac878f0-2457-4a80-aef9-d7ef16fd2e9f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/efficientnet.bck/efficientnet/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/efficientnet.bck/efficientnet/model.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/efficientnet.bck" />
+  </component>
+  <component name="ProjectId" id="1SvPSKeoesUG4A6IZjzOJMSsjyZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Glassbox" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.recursion">
+    <configuration name="recursion-pre" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recursion-pre.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="recursion-tf-pre" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recursion-tf-pre.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="recursion-tf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recursion-tf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="recursion" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/recursion.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.recursion" />
+        <item itemvalue="Python.recursion-pre" />
+        <item itemvalue="Python.recursion-tf-pre" />
+        <item itemvalue="Python.recursion-tf" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1ac878f0-2457-4a80-aef9-d7ef16fd2e9f" name="Default Changelist" comment="" />
+      <created>1572441094107</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572441094107</updated>
+      <workItem from="1572441099311" duration="8329000" />
+      <workItem from="1572467047331" duration="1210000" />
+      <workItem from="1572530150616" duration="7910000" />
+      <workItem from="1572547140230" duration="5281000" />
+      <workItem from="1572602728734" duration="356000" />
+      <workItem from="1572603121442" duration="14173000" />
+      <workItem from="1572681010024" duration="34000" />
+      <workItem from="1572685964537" duration="6058000" />
+      <workItem from="1572762663188" duration="10486000" />
+      <workItem from="1572788899791" duration="3972000" />
+      <workItem from="1572799203276" duration="38000" />
+      <workItem from="1572799260611" duration="44000" />
+      <workItem from="1572816640639" duration="3252000" />
+      <workItem from="1572851181932" duration="21912000" />
+      <workItem from="1572875280768" duration="10388000" />
+      <workItem from="1572904757479" duration="3601000" />
+      <workItem from="1572938035894" duration="12921000" />
+      <workItem from="1573025712239" duration="20834000" />
+      <workItem from="1573063433273" duration="28000" />
+      <workItem from="1573063485934" duration="14015000" />
+      <workItem from="1573111155223" duration="3466000" />
+      <workItem from="1573128038890" duration="5683000" />
+      <workItem from="1573146473365" duration="750000" />
+      <workItem from="1573155197548" duration="8218000" />
+      <workItem from="1573225580186" duration="8132000" />
+      <workItem from="1573251040366" duration="5720000" />
+      <workItem from="1573258300169" duration="212000" />
+      <workItem from="1573287408760" duration="14110000" />
+      <workItem from="1573416747620" duration="2581000" />
+      <workItem from="1573446915990" duration="1387000" />
+      <workItem from="1573457034796" duration="2134000" />
+      <workItem from="1573511781029" duration="4221000" />
+      <workItem from="1573516905383" duration="23000" />
+      <workItem from="1573516950030" duration="58000" />
+      <workItem from="1573537130305" duration="8157000" />
+      <workItem from="1573559902560" duration="11000" />
+      <workItem from="1573589325280" duration="3776000" />
+      <workItem from="1573626723485" duration="13296000" />
+      <workItem from="1573663865841" duration="1511000" />
+      <workItem from="1573713938952" duration="17972000" />
+      <workItem from="1573830297837" duration="4318000" />
+      <workItem from="1573889295505" duration="19538000" />
+      <workItem from="1573944487862" duration="770000" />
+      <workItem from="1573974350311" duration="16668000" />
+      <workItem from="1574011087820" duration="8357000" />
+      <workItem from="1574059708227" duration="30000" />
+      <workItem from="1574059755640" duration="13261000" />
+      <workItem from="1574139525286" duration="1234000" />
+      <workItem from="1574147229207" duration="135000" />
+      <workItem from="1574187610282" duration="4064000" />
+      <workItem from="1574233763583" duration="9723000" />
+      <workItem from="1574275207377" duration="15000" />
+      <workItem from="1574861423879" duration="1390000" />
+      <workItem from="1574928837490" duration="1967000" />
+      <workItem from="1575291157285" duration="8413000" />
+      <workItem from="1575320386665" duration="3998000" />
+      <workItem from="1575357939452" duration="5640000" />
+      <workItem from="1575385878488" duration="25000" />
+      <workItem from="1575448236053" duration="2131000" />
+      <workItem from="1575472584525" duration="183000" />
+      <workItem from="1575807617530" duration="96000" />
+      <workItem from="1575807735981" duration="29000" />
+      <workItem from="1575820865779" duration="596000" />
+      <workItem from="1575887871885" duration="37000" />
+      <workItem from="1576059471465" duration="9000" />
+      <workItem from="1576162310174" duration="649000" />
+      <workItem from="1576170932986" duration="35000" />
+      <workItem from="1577713072404" duration="101000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/efficientnet" />
+      <path value="$PROJECT_DIR$/efficientnet.bck" />
+      <path value="$PROJECT_DIR$/rxrx1-utils" />
+    </ignored-roots>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DL$recursion_tf.coverage" NAME="recursion-tf Coverage Results" MODIFIED="1573113782942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DL$recursion.coverage" NAME="recursion Coverage Results" MODIFIED="1575448425287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DL$recursion_pre.coverage" NAME="recursion-pre Coverage Results" MODIFIED="1574235631839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DL$recursion_tf_pre.coverage" NAME="recursion-tf-pre Coverage Results" MODIFIED="1573248628643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
