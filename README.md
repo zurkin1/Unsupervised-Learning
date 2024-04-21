@@ -169,3 +169,10 @@ We measured the ‘consensus’ factor of the FastICA embedding results by calcu
 - Sum the number of ‘agreements’ between points.
 
 When running this calculation we received a result of 600 agreements out of 1000 points (some points next to the boundary lines ought to get a wrong consensus score).
+
+# Unsupervised Learning Using AutoEncoders
+Another approach we investigated was the implementation of "Unsupervised Deep Embedding for Clustering Analysis" (https://arxiv.org/pdf/1511.06335.pdf), a highly original unsupervised method.
+
+In this approach, the network integrates both an encoder and decoder, along with a k-means layer. To enhance performance, we incorporated a ResNet backbone into our implementation. The coding techniques and training process are discussed in our notebook:
+
+[Autoencoder notebook](/code/wbc.ipynb)
